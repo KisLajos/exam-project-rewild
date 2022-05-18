@@ -38,7 +38,7 @@ font-style: normal;
 	margin: 0 auto;
 	
 }
-.grass svg{
+.grass img{
 	fill: #5d9345;
 	animation: skew-grass 2s infinite;
 	transform: skew;
@@ -75,13 +75,6 @@ font-style: normal;
 	}
 }
 
-.greensquare {
-    display: flex;
-    background-color: #7fa088;
-    height: 25rem;
-    width: 100%;
-    margin-top: 40%;
-}
 
 /* bee animation */
 .bee{
