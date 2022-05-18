@@ -1,3 +1,21 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
 
 /* grass animation */
 .grass {
@@ -5,20 +23,49 @@
 	height: 80px;
 	text-align: center;
 	margin: 0 auto;
-    margin-top: 500px;
 	
 }
-.grass svg {
+.grass svg{
 	fill: #5d9345;
-	animation: skew 3s infinite;
+	animation: skew-grass 3s infinite;
 	transform: skew;
 	animation-direction: alternate;
+    margin-top: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-@keyframes skew {
+.flowers img{
+	animation: skew-flowers 3s infinite;
+	transform: skew;
+	animation-direction: alternate;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@keyframes skew-grass{
 	0% {
 		transform: skewX(3deg) translate(-5px);
 	}
 	100% {
 		transform: skewX(-7deg) translate(5px);
 	}
+}
+@keyframes skew-flowers {
+	0% {
+		transform: skewX(2deg) translate(-1px);
+	}
+	100% {
+		transform: skewX(-3deg) translate(1px);
+	}
+}
+
+.greensquare {
+    display: flex;
+    background-color: #7fa088;
+    height: 300px;
+    width: 100%;
+    margin-top: 780px;
 }
