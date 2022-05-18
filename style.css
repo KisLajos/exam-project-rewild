@@ -20,14 +20,14 @@
 /* grass animation */
 .grass {
 	width: 100%;
-	height: 80px;
+	height: 8rem;
 	text-align: center;
 	margin: 0 auto;
 	
 }
 .grass svg{
 	fill: #5d9345;
-	animation: skew-grass 3s infinite;
+	animation: skew-grass 2s infinite;
 	transform: skew;
 	animation-direction: alternate;
     margin-top: 27%;
@@ -55,19 +55,19 @@
 }
 @keyframes skew-flowers {
 	0% {
-		transform: skewX(2deg) translate(-1px);
+		transform: skewX(3deg) translate(-3px);
 	}
 	100% {
-		transform: skewX(-3deg) translate(1px);
+		transform: skewX(-3deg) translate(3px);
 	}
 }
 
 .greensquare {
     display: flex;
     background-color: #7fa088;
-    height: 300px;
+    height: 25rem;
     width: 100%;
-    margin-top: 42%;
+    margin-top: 40%;
 }
 
 /* bee animation */
