@@ -138,3 +138,42 @@ font-style: normal;
     top: 30%;
     transform: rotate(-20deg);
 }
+
+
+
+
+
+
+
+/* footer */
+
+.footer_title{
+    font-family: 'arbotek', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 5em;
+    color: #402919;
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.hands{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+
+.soil{
+    position: absolute;
+    z-index: 500;
+    max-width: 100%;
+    padding-top: 32%;
+}
+
+.social_icon{
+    padding: 25px;
+    
+}
