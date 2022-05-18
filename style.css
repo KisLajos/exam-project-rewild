@@ -17,12 +17,18 @@
     height: 100%;
   }
 
-/* ARBOTEK VALUES FOR REFERENCE
+/* ARBOTEK ULTRA VALUES FOR REFERENCE
 font-family: arbotek, sans-serif;
 font-weight: 900;
 font-style: normal; 
-
 */
+
+/* ARBOTEK THIN VALUE FOR REFERENCE
+font-family: arbotek, sans-serif;
+font-weight: 100;
+font-style: normal; 
+*/
+
 
 /* grass animation */
 .grass {
