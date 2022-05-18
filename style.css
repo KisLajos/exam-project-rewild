@@ -64,6 +64,8 @@
     position: absolute;
     left: 40%;
     top: 15%;
+    transform: rotate(-20deg);
+    transform: rotate(-40deg);
 }
 
 #bee4{
@@ -82,4 +84,5 @@
     position: absolute;
     left: 90%;
     top: 30%;
+    transform: rotate(-20deg);
 }
