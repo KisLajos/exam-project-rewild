@@ -176,21 +176,26 @@ font-style: normal;
 .fa-facebook {
     background: transparent;
     color: #F0F757;
+    transition: width 0.8s, height 0.8s;
 }
 /* facebook hover */
 .fa-facebook:hover {
-    width: 300px;
-  }
+    width: 120px;
+    height: 120px;
+    
+}
 
 .fa-instagram {
     background: transparent;
     color:#F0F757;
+    transition: width 0.8s, height 0.8s;
 }
 
 /* instagram hover */
 .fa-facebook:hover {
-    width: 300px;
-  }
+    width: 120px;
+    height: 120px;
+}    
 
 .fa-brands {
     padding: 20px;
