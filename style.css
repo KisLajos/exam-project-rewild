@@ -173,7 +173,32 @@ font-style: normal;
     padding-top: 32%;
 }
 
-.social_icon{
-    padding: 25px;
-    
+.fa-facebook {
+    background: transparent;
+    color: #F0F757;
 }
+/* facebook hover */
+.fa-facebook:hover {
+    width: 300px;
+  }
+
+.fa-instagram {
+    background: transparent;
+    color:#F0F757;
+}
+
+/* instagram hover */
+.fa-facebook:hover {
+    width: 300px;
+  }
+
+.fa-brands {
+    padding: 20px;
+    font-size: 100px;
+    width: 100px;
+    height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
