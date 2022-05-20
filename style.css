@@ -421,3 +421,7 @@ body{
 #flowers{
     z-index: 2;
 }
+
+#city{
+    margin-top: 8rem;
+}
