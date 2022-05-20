@@ -382,7 +382,7 @@ html {
     }
 }
 
-.content {
+#section2 {
     cursor: url('images/cursor.png'), url('images/cursor.svg'), auto;
     position: absolute;
     top: 60rem;
@@ -514,7 +514,7 @@ body {
     font-family: arbotek, sans-serif;
     font-weight: 900;
     font-style: normal;
-    /* margin-left: 41rem; */
+    margin-top: 17rem;
 }
 
 #grass {
