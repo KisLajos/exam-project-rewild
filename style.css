@@ -379,9 +379,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .parallax:before{
     content: '';
@@ -424,7 +422,7 @@ body{
     font-family: arbotek, sans-serif;
     font-weight: 900;
     font-style: normal;
-    margin-left: 41rem;
+    /* margin-left: 41rem; */
 }
 
 #grass{
