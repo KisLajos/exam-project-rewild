@@ -53,7 +53,7 @@ section {
 	animation: skew-grass 2s infinite;
 	transform: skew;
 	animation-direction: alternate;
-    margin-top: 27%;
+    margin-top: 18%;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ section {
 	animation: skew-flowers 3s infinite;
 	transform: skew;
 	animation-direction: alternate;
-    margin-top: 5rem;
+    margin-top: 7%;
     position: absolute;
     top: 0;
     left: 0;
