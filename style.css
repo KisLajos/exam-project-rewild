@@ -404,10 +404,12 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     pointer-events: none;
 }
 
+#bg{
+    object-fit: cover;
+}
   #text1{
     position: relative;
     color: rgba(48, 35, 35, 0.952);
@@ -423,5 +425,5 @@ body{
 }
 
 #city{
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
