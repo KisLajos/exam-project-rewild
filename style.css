@@ -356,6 +356,7 @@ section {
     margin: 5px 2px;
   }
 
+  /* parallax */
   #text1{
     position: relative;
     color: rgba(48, 35, 35, 0.952);
