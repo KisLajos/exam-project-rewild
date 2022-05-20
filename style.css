@@ -271,11 +271,11 @@ section {
      transform: translate(-50%, -50%) rotate(45deg);
     border-top: transparent;
     border-left: transparent;
-    animation: scroll-down 1.3s ease-in-out infinite;
+    animation: scroll-down 2.5s ease-in-out infinite;
     }
 .scroll-down::after{
     top: 30%;
-    animation-delay: .3s;
+    animation-delay: 1s;
 }
 @keyframes scroll-down{
     0%{
