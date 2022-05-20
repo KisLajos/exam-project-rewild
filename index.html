@@ -48,7 +48,6 @@
             <div class="layer3">
                 <img src="images/header/grass.svg" alt="Grass">
             </div>
-
         </div>
     </header>
     
@@ -80,8 +79,8 @@
     </footer>
 
     <script type="text/javascript">
-        let bg = document.getElementById("");
-        let city = document.getElementById("");
+        let bg = document.getElementById("bg");
+        let city = document.getElementById("city");
         let grass = document.getElementById("grass");
         let flowers = document.getElementById("flowers");
         let text1 = document.getElementById("text1")
@@ -90,7 +89,7 @@
             var value = window.scrollY;
 
             bg.style.top = value * 0.5 + 'px';
-            city.style.top = -value * 0.15 + 'px';
+            city.style.top = value * 1.5 + 'px';
             grass.style.top = value * 0.15 + 'px';
             flowers.style.top = value * 0.15 + 'px';
             text1.style.top = value * 1 + 'px';
