@@ -61,7 +61,7 @@ section {
     top: 0;
     left: 0;
 }
-.layer1 img {
+.layer1 {
   position: absolute;
   margin-top: 8em;
   margin-left: 20%;
@@ -356,17 +356,3 @@ section {
     margin: 5px 2px;
   }
 
-  /* parallax */
-  #text1{
-    position: relative;
-    color: rgba(48, 35, 35, 0.952);
-    font-size: 10em;
-    z-index: 1;
-}
-
-#grass{
-    z-index: 3;
-}
-#flowers{
-    z-index: 2;
-}
