@@ -429,6 +429,7 @@ body{
 
 #grass{
     z-index: 3;
+    object-fit: cover;
 }
 #flowers{
     z-index: 2;
