@@ -17,16 +17,32 @@
     height: 100%;
   }
 
-/* grass animation */
-.grass {
+/* ARBOTEK ULTRA VALUES FOR REFERENCE
+font-family: arbotek, sans-serif;
+font-weight: 900;
+font-style: normal; 
+*/
+
+/* ARBOTEK THIN VALUE FOR REFERENCE
+font-family: arbotek, sans-serif;
+font-weight: 100;
+font-style: normal; 
+*/
+
+section {
+  background-color: #9DB6A4;
+  height: 2000px;
+}
+
+/* parallax */
+ .layer3 {
 	width: 100%;
 	height: 8rem;
 	text-align: center;
 	margin: 0 auto;
 	
 }
-.grass svg{
-	fill: #5d9345;
+.layer3 img{
 	animation: skew-grass 2s infinite;
 	transform: skew;
 	animation-direction: alternate;
@@ -35,16 +51,36 @@
     top: 0;
     left: 0;
 }
-.flowers img{
+.layer2 img{
 	animation: skew-flowers 3s infinite;
 	transform: skew;
 	animation-direction: alternate;
-    margin-top: 50px;
+    margin-top: 5rem;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
 }
+.layer1 img {
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 20%;
+  top: 0;
+  left: 0;
+
+} 
+.parallax {
+  background-image: url(images/background.svg);
+  height: 65rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 @keyframes skew-grass{
 	0% {
 		transform: skewX(3deg) translate(-5px);
@@ -60,20 +96,14 @@
 	100% {
 		transform: skewX(-3deg) translate(3px);
 	}
-}
+} 
 
-.greensquare {
-    display: flex;
-    background-color: #7fa088;
-    height: 25rem;
-    width: 100%;
-    margin-top: 40%;
-}
 
 /* bee animation */
 .bee{
     width: 40px;
     height: auto;
+    z-index: 10;
 }
 
 .bee:hover{
@@ -132,3 +162,72 @@
     top: 30%;
     transform: rotate(-20deg);
 }
+
+
+
+
+
+
+
+/* footer */
+
+.footer_title{
+    font-family: 'arbotek', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 5em;
+    color: #402919;
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.hands{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+
+.soil{
+    position: absolute;
+    z-index: 500;
+    max-width: 100%;
+    padding-top: 32%;
+}
+
+.fa-facebook {
+    background: transparent;
+    color: #F0F757;
+    transition: width 0.8s, height 0.8s;
+}
+/* facebook hover */
+.fa-facebook:hover {
+    width: 120px;
+    height: 120px;
+    
+}
+
+.fa-instagram {
+    background: transparent;
+    color:#F0F757;
+    transition: width 0.8s, height 0.8s;
+}
+
+/* instagram hover */
+.fa-facebook:hover {
+    width: 120px;
+    height: 120px;
+}    
+
+.fa-brands {
+    padding: 20px;
+    font-size: 100px;
+    width: 100px;
+    height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
