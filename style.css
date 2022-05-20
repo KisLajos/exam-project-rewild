@@ -58,6 +58,9 @@ section {
     top: 0;
     left: 0;
 }
+#grass {
+  object-fit: cover;
+}
 .layer2 img{
 	animation: skew-flowers 3s infinite;
 	transform: skew;
