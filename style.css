@@ -509,7 +509,7 @@ body {
 
 #text1 {
     position: relative;
-    color: rgba(111, 63, 0, 0.952);
+    color: #56351E;
     font-size: 10em;
     z-index: 1;
     font-family: arbotek, sans-serif;
