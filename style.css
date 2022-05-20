@@ -411,7 +411,7 @@ body{
     object-fit: cover;
 }
 #city{
-    object-fit: cover;
+    height: unset;
 }
   #text1{
     position: relative;
