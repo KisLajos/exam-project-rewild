@@ -103,6 +103,7 @@ section {
 .bee{
     width: 2rem;
     height: auto;
+    z-index: 10;
 }
 
 .bee:hover{
