@@ -232,12 +232,14 @@ section {
      left: 51%;
      bottom: 20%;
      text-decoration: none;
+     z-index: 10;
  }
  .shovel{
      position: absolute;
      left: 50%;
      bottom: 9%;
      width: 4rem;
+     z-index: 10;
  }
  html{
      scroll-behavior: smooth;
