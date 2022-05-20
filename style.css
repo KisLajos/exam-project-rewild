@@ -296,7 +296,7 @@ section {
     }
 }
 
-.content{
+#section2{
     cursor: url('images/cursor.png'), url('images/cursor.svg'), auto;
     position: absolute;
     top: 60rem;
