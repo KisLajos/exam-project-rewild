@@ -429,6 +429,7 @@ body{
 }
 #flowers{
     z-index: 2;
+    height: unset;
 }
 
 #city{
