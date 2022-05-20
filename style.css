@@ -415,9 +415,13 @@ body{
 }
   #text1{
     position: relative;
-    color: rgba(48, 35, 35, 0.952);
+    color: rgba(111, 63, 0, 0.952);
     font-size: 10em;
     z-index: 1;
+    font-family: arbotek, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 35%;
 }
 
 #grass{
