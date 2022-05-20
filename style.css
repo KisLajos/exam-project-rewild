@@ -410,6 +410,9 @@ body{
 #bg{
     object-fit: cover;
 }
+#city{
+    object-fit: cover;
+}
   #text1{
     position: relative;
     color: rgba(48, 35, 35, 0.952);
