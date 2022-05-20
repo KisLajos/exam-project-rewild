@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,41 +10,42 @@
     <script src="https://kit.fontawesome.com/3910174d34.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
-         <!-- bees -->
-         <img id="bee1" class="bee" src="images/bee.svg" alt="bee">
-         <img id="bee2" class="bee" src="images/bee1.svg" alt="bee">
-         <img id="bee3" class="bee" src="images/bee.svg" alt="bee">
-         <img id="bee4" class="bee" src="images/bee.svg" alt="bee">
-         <img id="bee5" class="bee" src="images/bee1.svg" alt="bee">
-         <img id="bee6" class="bee" src="images/bee1.svg" alt="bee">
-     
-     
-         <!-- bugs -->
-         <img id="bug1" class="bug" src="images/bug.svg" alt="bug">
-         <img id="bug2" class="bug" src="images/ladybug.svg" alt="ladybug">
-         <img id="bug3" class="bug" src="images/snail.png" alt="snail">
-         <img id="bug4" class="bug" src="images/snail.png" alt="snail">
-         <img id="bug5" class="bug" src="images/ladybug.svg" alt="ladybug">
-         <img id="bug6" class="bug" src="images/bug.svg" alt="bug">
- 
-         <!-- shovel button -->
-         <div class="main" id="section1" >
-             <a class="dig-deeper" href="#section2">dig deeper</a>
-             <img href="#section2" class="shovel" src="images/shovel.png" alt="shovel">
-             <div href="#section2" class="scroll-down"></div>
-         </div>
- 
-        
+        <!-- bees -->
+        <img id="bee1" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee2" class="bee" src="images/bee1.svg" alt="bee">
+        <img id="bee3" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee4" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee5" class="bee" src="images/bee1.svg" alt="bee">
+        <img id="bee6" class="bee" src="images/bee1.svg" alt="bee">
+
+
+        <!-- bugs -->
+        <img id="bug1" class="bug" src="images/bug.svg" alt="bug">
+        <img id="bug2" class="bug" src="images/ladybug.svg" alt="ladybug">
+        <img id="bug3" class="bug" src="images/snail.png" alt="snail">
+        <img id="bug4" class="bug" src="images/snail.png" alt="snail">
+        <img id="bug5" class="bug" src="images/ladybug.svg" alt="ladybug">
+        <img id="bug6" class="bug" src="images/bug.svg" alt="bug">
+
+        <!-- shovel button -->
+        <div class="main" id="section1">
+            <a class="dig-deeper" href="#section2">dig deeper</a>
+            <img href="#section2" class="shovel" src="images/shovel.png" alt="shovel">
+            <div href="#section2" class="scroll-down"></div>
+        </div>
+
+
         <!-- parallax -->
         <div class="parallax">
 
-                <img src="images/header/bg.svg" id="bg" alt="sky">
-                <img src="images/header/city.svg" id="city" alt="city">
-                <h2 id="text1">REWILD</h2>
-                <h2 id="text2">AARHUS</h2>
-            
+            <img src="images/header/bg.svg" id="bg" alt="sky">
+            <img src="images/header/city.svg" id="city" alt="city">
+            <h2 id="text1">REWILD</h2>
+            <h2 id="text2">AARHUS</h2>
+
             <!-- grass and flower animation -->
             <div class="layer2">
                 <img src="images/header/flowers.svg" id="flowers" alt="Flowers">
@@ -53,9 +55,9 @@
             </div>
         </div>
     </header>
-    
+
     <section id="section2" class="section-video">
-        
+
     </section>
 
     <section class="section-animation">
@@ -65,19 +67,19 @@
     <section class="section-projects">
 
     </section>
-    
+
     <footer>
         <div class="footer_container" style="margin-top: 100rem;">
             <div class="footer_title">Reach out to us</div>
             <img class="hands" src="images/hands.jpg" alt="reach_out">
             <img class="soil" src="images/soil.svg" alt="soil">
-        </div>    
-            <div class="icons_container">
-                <a href="https://www.instagram.com/rewildaarhus/" class="fa-brands fa-instagram"></a>
+        </div>
+        <div class="icons_container">
+            <a href="https://www.instagram.com/rewildaarhus/" class="fa-brands fa-instagram"></a>
 
-                <a href="https://www.facebook.com/groups/5279777528714319" class="fa-brands fa-facebook"></a>
-            </div> 
-        
+            <a href="https://www.facebook.com/groups/5279777528714319" class="fa-brands fa-facebook"></a>
+        </div>
+
 
     </footer>
 
@@ -89,7 +91,7 @@
         let flowers = document.getElementById("flowers");
         let text1 = document.getElementById("text1")
 
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             var value = window.scrollY;
 
             bg.style.top = value * 0.5 + 'px';
