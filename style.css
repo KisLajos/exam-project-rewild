@@ -362,3 +362,10 @@ section {
     font-size: 10em;
     z-index: 1;
 }
+
+#grass{
+    z-index: 3;
+}
+#flowers{
+    z-index: 2;
+}
