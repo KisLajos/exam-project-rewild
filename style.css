@@ -316,7 +316,7 @@ section {
     color: #F0F757;
     position: absolute;
     left: 51%;
-    bottom: 14%;
+    bottom: 20%;
     text-decoration: none;
     z-index: 10;
 }
@@ -324,7 +324,7 @@ section {
 .shovel {
     position: absolute;
     left: 50%;
-    bottom: 4%;
+    bottom: 8%;
     width: 4rem;
     z-index: 10;
 }
@@ -400,7 +400,6 @@ html {
     position: relative;
     text-align: center;
     margin-top: 3rem;
-
 }
 
 .hands {
@@ -411,23 +410,27 @@ html {
 }
 
 .soil {
-    position: absolute;
+    position: relative;
+    margin-top: 30rem;
     z-index: 500;
     max-width: 100%;
-    padding-top: 32%;
+}
+
+.icons_container{
+    display: flex;
+    justify-content: center;
 }
 
 .fa-facebook {
+    bottom: 0%;
     background: transparent;
     color: #F0F757;
-    transition: width 0.8s, height 0.8s;
+    z-index: 501;
 }
 
 /* facebook hover */
 .fa-facebook:hover {
-    width: 120px;
-    height: 120px;
-
+    transform: scale(1.5);
 }
 
 .fa-instagram {
@@ -451,7 +454,11 @@ html {
     text-decoration: none;
     margin: 5px 2px;
 }
-
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 /* parallax */
 * {
     margin: 0;
@@ -515,7 +522,18 @@ body {
     font-family: arbotek, sans-serif;
     font-weight: 900;
     font-style: normal;
-    margin-top: 17rem;
+    margin-top: 9rem;
+}
+#text2 {
+    position: relative;
+    color: #56351E;
+    font-size: 5em;
+    z-index: 1;
+    font-family: arbotek, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: -3rem;
+    margin-left: 16rem;
 }
 
 #grass {

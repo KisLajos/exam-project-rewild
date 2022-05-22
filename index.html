@@ -55,7 +55,12 @@
             </div>
         </div>
     </header>
+<<<<<<< Updated upstream
 
+=======
+    
+    <!-- leave the id=section2 as it transforms the cursor into a bee -->
+>>>>>>> Stashed changes
     <section id="section2" class="section-video">
 
     </section>
@@ -67,11 +72,16 @@
     <section class="section-projects">
 
     </section>
+<<<<<<< Updated upstream
 
     <footer>
+=======
+    
+    <footer class="footer">
+>>>>>>> Stashed changes
         <div class="footer_container" style="margin-top: 100rem;">
             <div class="footer_title">Reach out to us</div>
-            <img class="hands" src="images/hands.jpg" alt="reach_out">
+            <img class="hands" src="images/hand.png" alt="reach_out">
             <img class="soil" src="images/soil.svg" alt="soil">
         </div>
         <div class="icons_container">
@@ -89,7 +99,8 @@
         let city = document.getElementById("city");
         let grass = document.getElementById("grass");
         let flowers = document.getElementById("flowers");
-        let text1 = document.getElementById("text1")
+        let text1 = document.getElementById("text1");
+        let text2 = document.getElementById("text2")
 
         window.addEventListener('scroll', function () {
             var value = window.scrollY;
@@ -98,7 +109,8 @@
             city.style.top = value * 1.6 + 'px';
             grass.style.top = value * 0.15 + 'px';
             flowers.style.top = value * 0.15 + 'px';
-            text1.style.top = value * 1.2 + 'px';
+            text1.style.top = value * 2.7 + 'px';
+            text2.style.top = value * 2.7 + 'px';
         })
 
     </script>
