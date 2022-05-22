@@ -408,7 +408,7 @@ body {
 .dig-deeper {
     color: #F0F757;
     position: absolute;
-    left: 51%;
+    left: 49%;
     bottom: 20%;
     text-decoration: none;
     z-index: 10;
@@ -420,21 +420,18 @@ body {
 
 .shovel {
     position: absolute;
-    left: 50%;
+    left: 48.5%;
     bottom: 8%;
     width: 4rem;
     z-index: 10;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 .scroll-down {
     height: 50px;
     width: 30px;
     position: absolute;
-    left: 48%;
+    left: 47%;
     bottom: 20px;
     cursor: pointer;
     transform: rotate(38deg);
@@ -446,7 +443,7 @@ html {
     content: '';
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 48%;
     border: 2px solid #F0F757;
     height: 20px;
     width: 20px;
@@ -480,18 +477,19 @@ html {
     }
 }
 
-#section2 {
+#cursor-change {
     cursor: url('images/cursor.png'), url('images/cursor.svg'), auto;
-    position: absolute;
-    top: 60rem;
 }
 
 /* copy */
 .copy {
     font-family: 'arbotek', sans-serif;
     font-style: normal;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: white;
+    padding-top: 10em;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* footer */
@@ -503,15 +501,18 @@ html {
     font-family: 'arbotek', sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 5em;
+    font-size: 5rem;
     color: #402919;
-    margin-bottom: -7rem;
+    position: absolute;
+    margin-top: 20%;
+    z-index: 503;
+    left: 28%;
 
 }
 
 .hands {
     position: absolute;
-    z-index: -1;
+    margin-top: 17rem;
     max-width: 100%;
     height: auto;
 }
@@ -521,20 +522,20 @@ html {
     margin-top: 30rem;
     z-index: 500;
     max-width: 100%;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
 
 .icons_container {
     display: flex;
     justify-content: center;
-    bottom: -30rem;
-
 }
 
 .fa-facebook {
     background: transparent;
     color: #F0F757;
-    z-index: 501;
 }
 
 /* facebook hover */
