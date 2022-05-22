@@ -12,6 +12,7 @@
   */
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -120,6 +121,97 @@ section {
     }
 }
 
+/* parallax */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 1500px;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.parallax:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+}
+
+.parallax:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#bg {
+    object-fit: cover;
+}
+
+#city {
+    height: unset;s
+}
+
+#text1 {
+    position: relative;
+    color: #56351E;
+    font-size: 10em;
+    z-index: 1;
+    font-family: arbotek, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 9rem;
+}
+#text2 {
+    position: relative;
+    color: #56351E;
+    font-size: 5em;
+    z-index: 1;
+    font-family: arbotek, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: -3rem;
+    margin-left: 16rem;
+}
+
+#grass {
+    z-index: 3;
+    object-fit: cover;
+    margin-top: 3rem ;
+}
+
+#flowers {
+    z-index: 2;
+    height: unset;
+}
+
+#city {
+    margin-top: 2rem;
+}
 
 /* bees */
 .bee {
@@ -319,6 +411,10 @@ section {
     bottom: 20%;
     text-decoration: none;
     z-index: 10;
+    font-family: 'arbotek', sans-serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    
 }
 
 .shovel {
@@ -389,17 +485,26 @@ html {
     top: 60rem;
 }
 
+/* copy */
+.copy{
+    font-family: 'arbotek', sans-serif;
+    font-style: normal;
+    font-size: 1.3em;
+    color: white;
+}
 /* footer */
 
 .footer_title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-family: 'arbotek', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 5em;
     color: #402919;
-    position: relative;
-    text-align: center;
-    margin-top: 3rem;
+    margin-bottom: -7rem;
+
 }
 
 .hands {
@@ -410,19 +515,21 @@ html {
 }
 
 .soil {
-    position: relative;
+    position: absolute;
     margin-top: 30rem;
     z-index: 500;
     max-width: 100%;
+    
 }
 
 .icons_container{
     display: flex;
     justify-content: center;
+    bottom: -30rem;
+
 }
 
 .fa-facebook {
-    bottom: 0%;
     background: transparent;
     color: #F0F757;
     z-index: 501;
@@ -430,13 +537,15 @@ html {
 
 /* facebook hover */
 .fa-facebook:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .fa-instagram {
     background: transparent;
     color: #F0F757;
-    transition: width 0.8s, height 0.8s;
+}
+.fa-instagram:hover {
+    transform: scale(1.1);
 }
 
 /* instagram hover */
@@ -458,94 +567,4 @@ html {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-/* parallax */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 1500px;
-}
-
-.parallax {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-}
-
-.parallax:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 10000;
-}
-
-.parallax:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 10000;
-    mix-blend-mode: color;
-}
-
-.parallax img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-#bg {
-    object-fit: cover;
-}
-
-#city {
-    height: unset;
-}
-
-#text1 {
-    position: relative;
-    color: #56351E;
-    font-size: 10em;
-    z-index: 1;
-    font-family: arbotek, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    margin-top: 9rem;
-}
-#text2 {
-    position: relative;
-    color: #56351E;
-    font-size: 5em;
-    z-index: 1;
-    font-family: arbotek, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    margin-top: -3rem;
-    margin-left: 16rem;
-}
-
-#grass {
-    z-index: 3;
-    object-fit: cover;
-}
-
-#flowers {
-    z-index: 2;
-    height: unset;
-}
-
-#city {
-    margin-top: 5rem;
 }
