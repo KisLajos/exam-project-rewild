@@ -573,7 +573,7 @@ html {
     width: 100%;
 }
 
-.navbar-pager {
+.navbar {
     position: fixed;
     z-index: 100;
     top: 50%;
