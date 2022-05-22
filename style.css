@@ -173,7 +173,7 @@ body {
 }
 
 #city {
-    height: unset;s
+    height: unset;
 }
 
 #text1 {
@@ -186,6 +186,7 @@ body {
     font-style: normal;
     margin-top: 9rem;
 }
+
 #text2 {
     position: relative;
     color: #56351E;
@@ -201,7 +202,7 @@ body {
 #grass {
     z-index: 3;
     object-fit: cover;
-    margin-top: 3rem ;
+    margin-top: 3rem;
 }
 
 #flowers {
@@ -414,7 +415,7 @@ body {
     font-family: 'arbotek', sans-serif;
     font-size: 1.6em;
     font-weight: 900;
-    
+
 }
 
 .shovel {
@@ -486,12 +487,13 @@ html {
 }
 
 /* copy */
-.copy{
+.copy {
     font-family: 'arbotek', sans-serif;
     font-style: normal;
     font-size: 1.3em;
     color: white;
 }
+
 /* footer */
 
 .footer_title {
@@ -519,10 +521,10 @@ html {
     margin-top: 30rem;
     z-index: 500;
     max-width: 100%;
-    
+
 }
 
-.icons_container{
+.icons_container {
     display: flex;
     justify-content: center;
     bottom: -30rem;
@@ -544,6 +546,7 @@ html {
     background: transparent;
     color: #F0F757;
 }
+
 .fa-instagram:hover {
     transform: scale(1.1);
 }
@@ -563,8 +566,39 @@ html {
     text-decoration: none;
     margin: 5px 2px;
 }
-.footer{
+
+.footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.navbar-pager {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.navbar-button {
+    display: block;
+    height: 18px;
+    width: 18px;
+    margin: 5px 0;
+    background-color: #fff;
+    opacity: .25;
+    /* appearance: none; */
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.navbar-button.selected {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.navbar-button:active {
+    outline: none;
 }
