@@ -629,6 +629,59 @@ body {
     outline: none;
 }
 
+/* ANIMATION */
+#currpix {
+    position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}
+
+/* Styles to make skrollable work. Copy these to your file. */
+.skrollable {
+    position: fixed;
+    z-index: 100;
+}
+.skrollr-mobile .skrollable {
+    position: absolute;
+}
+.skrollable .skrollable {
+    position: absolute;
+}
+
+.skrollable .skrollable .skrollable {
+    position: static;
+}
+
+.animation-image {
+    position: absolute;
+}
+
+.scene-container {
+    position: fixed;
+    height: 17500px;
+}
+
+/* #animation-man {
+    left: 15%;
+    top: 500%;
+}
+
+#animation-grass {
+    left: 35%;
+    top: 560%;
+}
+
+#animation-lawnmower {
+    left: 28%;
+    top: 535%;
+} */
+
+/* ANIMATION END */
+
 /* PROJECT GALLERY */
 
  body {
