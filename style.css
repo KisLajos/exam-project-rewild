@@ -503,6 +503,10 @@ body {
 
 /* footer */
 
+.footer_container {
+  position: relative;
+}
+
 .footer_title {
     display: flex;
     text-align: center;
@@ -520,22 +524,31 @@ body {
 }
 
 .hands {
+<<<<<<< Updated upstream
     position: absolute;
     margin-top: 9rem;
+=======
+  display: block;
+>>>>>>> Stashed changes
     max-width: 100%;
     height: auto;
 }
 
 .soil {
     position: absolute;
-    margin-top: 30rem;
-    z-index: 500;
+    z-index: 1;
     max-width: 100%;
+    top: 0;
+    margin-top: 17rem;
 }
 
 .icons_container {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin-bottom: 10rem;
+    
 }
 
 .fa-facebook {
@@ -558,9 +571,13 @@ body {
 }
 
 /* instagram hover */
-.fa-facebook:hover {
+.fa-facebook {
     width: 120px;
     height: 120px;
+}
+.fa-instagram {
+  width: 120px;
+  height: 120px;
 }
 
 .fa-brands {
