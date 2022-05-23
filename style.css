@@ -599,3 +599,236 @@ body {
 .navbar-button:active {
     outline: none;
 }
+
+/* PROJECT GALLERY */
+
+ body {
+  background-color: #9db6a4;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+} 
+
+.gallery-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 4rem 3.5%;
+  }
+  
+  .gallery-item {
+    display: flex;
+    aspect-ratio: 1;
+    background-color: #1EAAFC;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .gallery-item .gallery-label {
+    align-self: flex-end;
+    margin-bottom: -25px;
+  }
+  
+  .gallery-item .gallery-triangle {
+    align-self: flex-end;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 75px 75px;
+    border-color: transparent transparent #7FA088 transparent;
+    margin-left: auto;
+  }
+  
+  .gallery-triangle::after {
+    content: "↘";
+    font-size: 30px;
+    color: #f0f757;
+    position: relative;
+    left: -30px;
+    bottom: -36px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: 48% 48%;
+      grid-gap: 3rem 4%;
+    }
+  }
+  
+  @media only screen and (max-width: 880px) {
+    .gallery-item .gallery-triangle {
+      border-width: 0 0 60px 60px;
+    }
+    
+    .gallery-triangle::after {
+      font-size: 24px;
+      left: -24px;
+      bottom: -30px;
+    }
+  }
+  
+  .popup-bg {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+  }
+  
+  .popup-bg.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup-container {
+    background: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    opacity: 1;
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.075);
+  }
+  
+  .popup-content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup-pic-container {
+    width: 60%;
+    height: 100%;
+    float: left;
+  }
+  
+  .popup-text-container {  
+    background: white;
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+  
+  .popup-exit {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .popup-container {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+     
+    .popup-pic, .popup-pic-container {
+      width: 55%;
+    }
+     
+    .popup-text-container {
+      width: 45%;
+    }
+  }
+  
+  /*------*/
+  
+  .popup-trigger {
+    display: none;
+  }
+  
+  .popup-slider, .popup-slider-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  
+  .popup-slide {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  
+  .popup-slide-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .popup-slide-figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+  }
+  
+  .popup-trigger:checked + .popup-slide {
+    z-index: 6000;
+    opacity: 1;
+  }
+  
+  .popup-slider-nav {
+    width: 100%;
+    text-align: center;
+    z-index: 7000;
+    position: absolute;
+    bottom: 0px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  
+  .popup-slider-nav-item {
+    display: inline-block;
+  }
+  
+  .popup-slider-nav-label {
+    font-size: 15px;
+    background-color: #f0f757;
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
+  }
+  
+  .popup-slider-nav-label:hover,
+  .popup-slider-nav-label:active,
+  .popup-slider-nav-label:focus {
+    background-color: gray;
+    color: black;
+  }
+  
+  /* PROJECT GALLERY END */
