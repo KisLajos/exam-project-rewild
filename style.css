@@ -504,7 +504,7 @@ body {
     font-size: 5rem;
     color: #402919;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 10%;
     z-index: 503;
     left: 28%;
 
@@ -512,7 +512,7 @@ body {
 
 .hands {
     position: absolute;
-    margin-top: 17rem;
+    margin-top: 9rem;
     max-width: 100%;
     height: auto;
 }
