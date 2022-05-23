@@ -408,7 +408,7 @@ body {
 .dig-deeper {
     color: #F0F757;
     position: absolute;
-    left: 49%;
+    left: 47%;
     bottom: 20%;
     text-decoration: none;
     z-index: 10;
@@ -485,12 +485,20 @@ body {
 .copy {
     font-family: 'arbotek', sans-serif;
     font-style: normal;
-    font-size: 1.5em;
-    color: white;
-    padding-top: 10em;
+    font-size: 2em;
+    color:#402919;;
+    padding-top: 3em;
     margin-left: 15%;
     margin-right: 15%;
     line-height: 1.4;
+}
+
+/* video */
+.video{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
 }
 
 /* footer */
