@@ -455,7 +455,7 @@ body {
 
 .scroll-down::after {
     top: 30%;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 @keyframes scroll-down {
