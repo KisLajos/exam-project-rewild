@@ -50,6 +50,9 @@ let text2 = document.getElementById("text2")
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
     console.log(value)
+    const currpix = document.getElementById('currpix');
+    console.log(currpix.textContent)
+    currpix.textContent = value.toFixed(5).toString();
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
