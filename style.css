@@ -66,6 +66,7 @@ section {
 
 }
 
+/* in order to make the grass move */
 .layer3 img {
     animation: skew-grass 2s infinite;
     transform: skew;
@@ -80,6 +81,7 @@ section {
     object-fit: cover;
 }
 
+/* in order to make the flowers move */
 .layer2 img {
     animation: skew-flowers 3s infinite;
     transform: skew;
@@ -186,6 +188,7 @@ body {
     height: unset;
 }
 
+/* styling the REWILD AARHUS heading */
 #text1 {
     position: relative;
     color: #56351E;
@@ -230,7 +233,7 @@ body {
     height: auto;
     z-index: 10;
 }
-
+/* making bees interactive when hovering */
 .bee:hover {
     animation: shake 0.6s;
 }
@@ -325,7 +328,7 @@ body {
     width: 2rem;
     z-index: 10;
 }
-
+/* making bugs interactive when hovering */
 .bug:hover {
     animation: shake 0.6s;
 }
@@ -436,7 +439,7 @@ body {
     z-index: 10;
 }
 
-
+/* activating the "dig deep" button when clicking */
 .scroll-down {
     height: 50px;
     width: 30px;
@@ -487,11 +490,12 @@ body {
     }
 }
 
+/* making a bee out of the cursor when starting to scroll down */
 #cursor-change {
     cursor: url('images/cursor.png'), url('images/cursor.svg'), auto;
 }
 
-/* copy */
+/* styling all the copy of the WebDoc  */
 .copy {
   font-family: finalsix, sans-serif;
   font-weight: 300;
@@ -513,12 +517,12 @@ body {
 }
 
 /* footer */
-
 .footer_container {
   position: relative;
   bottom: 0;
 }
 
+/* Reach out to us text */
 .footer_title {
     font-family: 'arbotek', sans-serif;
     font-weight: 100;
@@ -529,11 +533,9 @@ body {
     margin-top: 5%;
     z-index: 10;
     left: 32%;
-
 }
-
+/* background image of the footer */
 .hands {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -547,12 +549,10 @@ body {
     left: 0;
     z-index: 2;
     margin-left: 42%;
-    margin-bottom: 5rem;
-    
-    
-    
+    margin-bottom: 5rem;  
 }
 
+/* a so-me icon inserted using Font Awesome */
 .fa-facebook {
     background: transparent;
     color: #F0F757;
@@ -563,6 +563,7 @@ body {
     transform: scale(1.1);
 }
 
+/* a so-me icon inserted using Font Awesome */
 .fa-instagram {
     background: transparent;
     color: #F0F757;
@@ -572,7 +573,6 @@ body {
     transform: scale(1.1);
 }
 
-/* instagram hover */
 .fa-facebook {
     width: 120px;
     height: 120px;
@@ -598,6 +598,7 @@ body {
     width: 100%;
 }
 
+/* dot navigation bar */
 .navbar {
     position: fixed;
     z-index: 100;
