@@ -47,7 +47,7 @@ font-family: finalsix, sans-serif;
 font-weight: 500;
 font-style: normal;*/
 
-/*
+/* FINAL SIX LIGHT FOR REFERENCE
 font-family: finalsix, sans-serif;
 font-weight: 300;
 font-style: normal*/
@@ -497,11 +497,11 @@ body {
 
 /* styling all the copy of the WebDoc  */
 .copy {
-  font-family: finalsix, sans-serif;
+  font-family: 'finalsix', sans-serif;
   font-weight: 300;
   font-style: normal;
     font-size: 2em;
-    color:#dfffd4;
+    color: #56351E;
     padding-top: 3em;
     margin-left: 15%;
     margin-right: 15%;
@@ -524,13 +524,13 @@ body {
 
 /* Reach out to us text */
 .footer_title {
-    font-family: 'arbotek', sans-serif;
-    font-weight: 100;
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-size: 5rem;
-    color: #402919;
+    font-size: 4rem;
+    color: #56351E;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 1%;
     z-index: 10;
     left: 32%;
 }
@@ -718,6 +718,10 @@ body {
   .gallery-item .gallery-label {
     align-self: flex-end;
     margin-bottom: -25px;
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:#dfffd4;
   }
   
   .gallery-item .gallery-triangle {
@@ -804,6 +808,9 @@ body {
     float: right;
     padding: 0px 15px;
     box-sizing: border-box;
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
   
   .popup-exit {
@@ -831,7 +838,10 @@ body {
     }
      
     .popup-text-container {
-      width: 45%;
+        width: 45%;
+        font-family: 'finalsix', sans-serif;
+        font-weight: 300;
+        font-style: normal;
     }
   }
   
@@ -887,6 +897,9 @@ body {
     bottom: 0px;
     padding: 0;
     padding-bottom: 10px;
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
+    font-style: normal
   }
   
   .popup-slider-nav-item {
