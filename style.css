@@ -500,7 +500,7 @@ body {
   font-family: 'finalsix', sans-serif;
   font-weight: 300;
   font-style: normal;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #56351E;
     padding-top: 3em;
     margin-left: 15%;
@@ -549,7 +549,7 @@ body {
     left: 0;
     z-index: 2;
     margin-left: 42%;
-    margin-bottom: 5rem;  
+    margin-bottom: 3rem;  
 }
 
 /* a so-me icon inserted using Font Awesome */
@@ -584,18 +584,107 @@ body {
 
 .fa-brands {
     padding: 20px;
-    font-size: 100px;
+    font-size: 4em;
     width: 100px;
     height: 4rem;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
 }
 
 .footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* worms */
+.worm {
+    width: 4%;
+    height: auto;
+    z-index: 10;
+}
+/* making worms interactive when hovering */
+.worm:hover {
+    animation: shake 0.6s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+#worm1 {
+    position: absolute;
+    left: 10%;
+    transform: rotate(100deg);
+    margin-top: -5%;
+    margin-left: -4%;
+}
+
+#worm2 {
+    position: absolute;
+    left: 30%;
+    transform: rotate(40deg);
+    margin-top: -6%;
+    margin-left: -6%;
+}
+
+#worm3 {
+    position: absolute;
+    left: 90%;
+    transform: rotate(70deg);
+    margin-top: -5%;
+    margin-left: -22%;
+}
+
+#worm4 {
+    position: absolute;
+    left: 90%;
+    transform: rotate(40deg);
+    margin-top: -8%;
+    margin-left: -2%;
 }
 
 /* dot navigation bar */
@@ -743,25 +832,6 @@ body {
     bottom: -36px;
   }
   
-  @media only screen and (max-width: 600px) {
-    .gallery-grid {
-      grid-template-columns: 48% 48%;
-      grid-gap: 3rem 4%;
-    }
-  }
-  
-  @media only screen and (max-width: 880px) {
-    .gallery-item .gallery-triangle {
-      border-width: 0 0 60px 60px;
-    }
-    
-    .gallery-triangle::after {
-      font-size: 24px;
-      left: -24px;
-      bottom: -30px;
-    }
-  }
-  
   .popup-bg {
     background: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -823,16 +893,8 @@ body {
     font-size: 32px;
     line-height: 38px;
     cursor: pointer;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .popup-container {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-     
+  }    
+
     .popup-pic, .popup-pic-container {
       width: 55%;
     }
@@ -843,7 +905,6 @@ body {
         font-weight: 300;
         font-style: normal;
     }
-  }
   
   /*------*/
   
@@ -928,3 +989,67 @@ body {
   }
   
   /* PROJECT GALLERY END */
+
+
+ /* MEDIA QUERIES */
+ @media only screen and (max-width: 1300px) {
+    .footer_title {
+        font-size: 3rem;
+  }
+  .fa-brands {
+    font-size: 3.5em;
+  }
+    .icons_container {
+        margin-left: 40%;
+        margin-bottom: 1.8rem;
+    }
+}
+  @media only screen and (max-width: 880px) {
+    .gallery-item .gallery-triangle {
+      border-width: 0 0 60px 60px;
+    }
+    
+    .gallery-triangle::after {
+      font-size: 24px;
+      left: -24px;
+      bottom: -30px;
+    }
+
+    .footer_title {
+        font-size: 2.8rem;
+        left: 25%;
+    }
+    .fa-brands {
+        font-size: 3em;
+     }
+     .icons_container {
+        margin-left: 37%;
+        margin-bottom: 0.8rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .footer_title {
+        font-size: 2.1rem;
+        left: 26%;
+    }
+    .gallery-grid {
+      grid-template-columns: 48% 48%;
+      grid-gap: 3rem 4%;
+    }
+    .popup-container {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .fa-brands {
+        font-size: 2.5em;
+     }
+     .icons_container {
+         margin-left: 33%;
+         margin-bottom: 0.5rem;
+     }
+
+  }
