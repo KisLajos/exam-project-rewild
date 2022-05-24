@@ -24,6 +24,21 @@ body {
     scroll-behavior: smooth;
 }
 
+.skrollable {
+    position: fixed;
+    z-index: 100;
+}
+.skrollr-mobile .skrollable {
+    position: absolute;
+}
+.skrollable .skrollable {
+    position: absolute;
+}
+
+.skrollable .skrollable .skrollable {
+    position: static;
+}
+
 /* ARBOTEK ULTRA VALUES FOR REFERENCE
 font-family: arbotek, sans-serif;
 font-weight: 900;
@@ -55,6 +70,10 @@ font-style: normal*/
 section {
     background-color: #9DB6A4;
     height: 2000px;
+}
+
+.section-animation {
+    height: 17500px;
 }
 
 /* parallax */
@@ -729,29 +748,14 @@ body {
   z-index: 9999;
 }
 
-/* Styles to make skrollable work. Copy these to your file. */
-.skrollable {
-    position: fixed;
-    z-index: 100;
-}
-.skrollr-mobile .skrollable {
-    position: absolute;
-}
-.skrollable .skrollable {
-    position: absolute;
-}
-
-.skrollable .skrollable .skrollable {
-    position: static;
-}
-
 .animation-image {
     position: absolute;
 }
 
 .scene-container {
     position: fixed;
-    height: 17500px;
+    /* height: 17500px; */
+    top: 0;
 }
 
 /* #animation-man {
@@ -762,13 +766,55 @@ body {
 #animation-grass {
     left: 35%;
     top: 560%;
+} */
+
+#animation-grass {
+	top: 60%;
+	width: 50%;
+	z-index: 101;
 }
 
 #animation-lawnmower {
-    left: 28%;
-    top: 535%;
-} */
+    top: 38%;
+    z-index: 102;
+}
 
+#animation-flowers-in-hand {
+    left: 23%;
+    z-index: 100;
+}
+
+#animation-grass-2 {
+    left: 25%;
+    top: 51%;
+    z-index: 101;
+}
+
+#animation-flowers-in-grass {
+    left: 35%;
+    top: 58%;
+    z-index: 100;
+    scale: 0.7;
+}
+
+#animation-dandelions-in-grass {
+    left: 25%;
+    top: 43%;
+    z-index: 100;
+    scale: 0.7;
+}
+
+#animation-soil {
+    left: 21%;
+    top: 84%;
+    scale: 0.86;
+}
+
+#animation-stones {
+    left: 23%;
+    top: 86%;
+    scale: 0.75;
+}
 /* ANIMATION END */
 
 /* PROJECT GALLERY */
