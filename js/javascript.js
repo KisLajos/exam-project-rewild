@@ -1,3 +1,5 @@
+/* IntersectionObserver used to animate the navbar dots,
+so when we arrive at a section, the corresponding dot gets animated */
 let observer = new IntersectionObserver((entries, observer) => {
     console.log(entries)
     for (const entry of entries) {
@@ -23,14 +25,12 @@ let observer = new IntersectionObserver((entries, observer) => {
             if (entry.target.id === "intersection-5") {
                 document.getElementById("button-5").classList.add("selected");
             }
-
-            console.log(entry.target.id);
         }
     };
 }, { threshold: 0.25 });
 
 /* Because the animation section is extra long due to the skrollr animations' nature
- we have to have a second observer with a much larger threshold
+ we have to have a second observer with a much smaller threshold
  that only watches for the animation section */
 let long_observer = new IntersectionObserver((entries, observer) => {
     console.log(entries)
@@ -67,8 +67,8 @@ let text2 = document.getElementById("text2")
 
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
-    const currpix = document.getElementById('currpix');
-    currpix.textContent = value.toFixed(5).toString();
+    const currpix = document.getElementById('currpix'); /* some debugging for animation */
+    currpix.textContent = value.toFixed(5).toString(); /* TODO: remove */
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
