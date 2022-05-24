@@ -848,23 +848,17 @@ body {
     z-index: 103;
 }
 
-/* #animation-butterflies {
-    left: 23%;
-    top: 86%;
+#animation-butterflies {
+    left: 30%;
+    top: 50%;
     scale: 0.75;
-} */
+}
 
-/* #animation-mole {
-    left: 23%;
-    top: 86%;
+#animation-mole {
+    left: 60%;
+    top: 95%;
     scale: 0.75;
-} */
-
-/* #animation-worms {
-    left: 23%;
-    top: 86%;
-    scale: 0.75;
-} */
+}
 
 /* ANIMATION END */
 
