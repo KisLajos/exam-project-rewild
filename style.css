@@ -75,7 +75,7 @@ section {
 }
 
 .section-animation {
-    height: 11000px;
+    height: 17500px;
 }
 
 /* parallax */
@@ -1107,7 +1107,6 @@ body {
 
 /* PROJECT GALLERY END */
 
-
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
 @media only screen and (max-width: 1300px) {
     .footer_title {
@@ -1264,7 +1263,7 @@ body {
     }
 
     .icons_container {
-        margin-left: 33%;
+        margin-left: 30%;
         margin-bottom: 0.5rem;
     }
 
