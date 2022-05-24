@@ -609,7 +609,7 @@ body {
     margin-left: -2%;
 }
 
-/* dot navigation bar */
+/* Vertical dot navigation bar */
 .navbar {
     position: fixed;
     z-index: 100;
@@ -640,6 +640,7 @@ body {
     outline: none;
 }
 
+/* Hover tooltips for navbar */
 .navbar-button-link {
     position: absolute;
     top: 50%;
@@ -670,6 +671,7 @@ body {
 
 /* ANIMATION */
 
+/* For debugging, TODO: remove */
 #currpix {
     position: fixed;
     top: 20px;
@@ -686,20 +688,10 @@ body {
 
 .scene-container {
     position: fixed;
-    /* height: 17500px; */
     top: 0;
 }
 
-/* #animation-man {
-    left: 15%;
-    top: 500%;
-}
-
-#animation-grass {
-    left: 35%;
-    top: 560%;
-} */
-
+/* Positioning all the elements of the scene */
 #animation-grass {
     top: 60%;
     width: 50%;
@@ -811,7 +803,6 @@ body {
 /* ANIMATION END */
 
 /* PROJECT GALLERY */
-
 body {
     background-color: #9db6a4;
     height: 100vh;
