@@ -749,13 +749,13 @@ body {
     top: 50%;
     visibility: hidden;
     transform: translate(-120%,-50%);
-    width: 8rem; 
+    width: 5rem; 
     /* padding: 5px 10px; */
     opacity: 0;
     color: #fff;
-    /* background-color: yellow; */
     transition: all .3s;
     text-decoration: none;
+    text-align: right;
 }
 
 .navbar-button:hover .navbar-button-link {
