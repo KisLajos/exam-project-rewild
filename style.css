@@ -237,6 +237,7 @@ body {
     z-index: 3;
     object-fit: cover;
     margin-top: 3rem;
+    width: 110%;
 }
 
 #flowers {
