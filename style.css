@@ -748,9 +748,8 @@ body {
     position: absolute;
     top: 50%;
     visibility: hidden;
-    transform: translate(-120%,-50%);
-    width: 5rem; 
-    /* padding: 5px 10px; */
+    transform: translate(-120%, -50%);
+    width: 5rem;
     opacity: 0;
     color: #fff;
     transition: all .3s;
@@ -761,21 +760,20 @@ body {
 .navbar-button:hover .navbar-button-link {
     visibility: visible;
     opacity: 1;
-    transform: translate(-110%,-50%);
+    transform: translate(-110%, -50%);
 }
 
-.navbar-button:before, .navbar-button:after {
+.navbar-button:before,
+.navbar-button:after {
     content: "";
 }
+
 .navbar-button:hover {
     cursor: pointer;
 }
-/* .navbar-button.selected:before {
-    opacity: 1;
-    transform: scale(1);
-} */
 
 /* ANIMATION */
+
 #currpix {
     position: fixed;
     top: 20px;
@@ -1151,61 +1149,67 @@ body {
         margin-left: 40%;
         margin-bottom: 1.8rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1.6em;
     }
+
     #text1 {
         font-size: 8em;
         margin-top: 7rem;
     }
-    
+
     #text2 {
         font-size: 4em;
         margin-top: -3rem;
         margin-left: 13rem;
     }
-    
+
     #grass {
         z-index: 3;
         object-fit: cover;
         margin-top: 1rem;
         width: 110%;
     }
-    
+
     #flowers {
         margin-top: 8rem;
     }
-    
+
     #city {
         margin-top: 5rem;
     }
+
     #text1 {
         font-size: 10em;
         margin-top: 7rem;
     }
-    
+
     #text2 {
         font-size: 6em;
         margin-top: -3rem;
         margin-left: 13rem;
     }
 }
+
 @media only screen and (max-width: 1110px) {
     #city {
         margin-top: 9em;
-    } 
+    }
+
     #text1 {
         font-size: 9em;
         margin-top: 6rem;
     }
-    
+
     #text2 {
         font-size: 5em;
         margin-top: -3rem;
         margin-left: 13rem;
-    } 
+    }
 }
+
 @media only screen and (max-width: 880px) {
     .gallery-item .gallery-triangle {
         border-width: 0 0 60px 60px;
@@ -1230,46 +1234,51 @@ body {
         margin-left: 34%;
         margin-bottom: 0.8rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1.5em;
     }
+
     .dig-deeper {
         left: 47%;
         bottom: 19%;
         font-size: 1.5em;
     }
+
     .shovel {
         left: 49.5%;
         bottom: 8%;
         width: 3.5rem;
     }
+
     #text1 {
         font-size: 8em;
         margin-top: 7rem;
     }
-    
+
     #text2 {
         font-size: 4em;
         margin-top: -3rem;
         margin-left: 13rem;
     }
-    
+
     #grass {
         z-index: 3;
         object-fit: cover;
         margin-top: 1rem;
         width: 110%;
     }
-    
+
     #flowers {
         margin-top: 15rem;
     }
-    
+
     #city {
         margin-top: 15.8em;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .footer_title {
         font-size: 2.1rem;
@@ -1301,56 +1310,59 @@ body {
         font-weight: 300;
         font-size: 1.3em;
     }
+
     .dig-deeper {
         left: 46%;
         bottom: 17%;
         font-size: 1.4em;
     }
-    
+
     .shovel {
         left: 50.5%;
         bottom: 8%;
         width: 3rem;
     }
+
     #text1 {
         font-size: 8em;
         margin-top: 7rem;
     }
-    
+
     #text2 {
         font-size: 4em;
         margin-top: -3rem;
         margin-left: 13rem;
     }
-    
+
     #grass {
         z-index: 3;
         object-fit: cover;
         margin-top: 0.3em;
         width: 110%;
     }
-    
+
     #flowers {
         margin-top: 15rem;
     }
-    
+
     #city {
         margin-top: 15.4em;
     }
 }
+
 @media only screen and (max-width: 600px) {
     #city {
         margin-top: 18.9em;
-    } 
+    }
+
     #text1 {
         font-size: 7.5em;
         margin-top: 9rem;
     }
-    
+
     #text2 {
         font-size: 3.5em;
         margin-top: -3rem;
         margin-left: 13rem;
     }
 }
-
