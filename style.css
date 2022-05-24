@@ -144,10 +144,6 @@ section {
 }
 
 /* parallax */
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     min-height: 1500px;
@@ -198,7 +194,7 @@ body {
     height: unset;
 }
 
-/* styling the REWILD AARHUS heading */
+/* Styling the REWILD AARHUS heading */
 #text1 {
     position: relative;
     color: #56351E;
@@ -238,14 +234,14 @@ body {
     margin-top: 2rem;
 }
 
-/* bees */
+/* Styling bees */
 .bee {
     width: 2rem;
     height: auto;
     z-index: 10;
 }
 
-/* making bees interactive when hovering */
+/* Making bees interactive when hovering */
 .bee:hover {
     animation: shake 0.6s;
 }
@@ -335,13 +331,13 @@ body {
     transform: rotate(20deg);
 }
 
-/* bugs in grass */
+/* Bugs in grass */
 .bug {
     width: 2rem;
     z-index: 10;
 }
 
-/* making bugs interactive when hovering */
+/* Making bugs interactive when hovering */
 .bug:hover {
     animation: shake 0.6s;
 }
