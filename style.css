@@ -1196,12 +1196,12 @@ body {
         margin-top: 9em;
     } 
     #text1 {
-        font-size: 8em;
+        font-size: 9em;
         margin-top: 6rem;
     }
     
     #text2 {
-        font-size: 4em;
+        font-size: 5em;
         margin-top: -3rem;
         margin-left: 13rem;
     } 
@@ -1227,7 +1227,7 @@ body {
     }
 
     .icons_container {
-        margin-left: 37%;
+        margin-left: 34%;
         margin-bottom: 0.8rem;
     }
     .copy {
@@ -1335,6 +1335,22 @@ body {
     }
     
     #city {
-        margin-top: 16.4em;
+        margin-top: 15.4em;
     }
 }
+@media only screen and (max-width: 600px) {
+    #city {
+        margin-top: 18.9em;
+    } 
+    #text1 {
+        font-size: 7.5em;
+        margin-top: 9rem;
+    }
+    
+    #text2 {
+        font-size: 3.5em;
+        margin-top: -3rem;
+        margin-left: 13rem;
+    }
+}
+
