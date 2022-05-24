@@ -723,14 +723,14 @@ body {
 }
 
 .navbar-button {
+    position: relative;
     display: block;
-    height: 18px;
-    width: 18px;
-    margin: 5px 0;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 28px;
     background-color: #fff;
     opacity: .25;
-    /* appearance: none; */
-    border: none;
+    border: 3px solid #fff;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
@@ -743,6 +743,37 @@ body {
 .navbar-button:active {
     outline: none;
 }
+
+.navbar-button-link {
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+    transform: translate(-120%,-50%);
+    width: 8rem; 
+    /* padding: 5px 10px; */
+    opacity: 0;
+    color: #fff;
+    /* background-color: yellow; */
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.navbar-button:hover .navbar-button-link {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-110%,-50%);
+}
+
+.navbar-button:before, .navbar-button:after {
+    content: "";
+}
+.navbar-button:hover {
+    cursor: pointer;
+}
+/* .navbar-button.selected:before {
+    opacity: 1;
+    transform: scale(1);
+} */
 
 /* ANIMATION */
 #currpix {
