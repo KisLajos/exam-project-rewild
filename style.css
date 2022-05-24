@@ -524,7 +524,7 @@ body {
     font-family: 'finalsix', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 1.7em;
     color: #56351E;
     padding-top: 3em;
     margin-left: 15%;
@@ -1110,6 +1110,10 @@ body {
         margin-left: 40%;
         margin-bottom: 1.8rem;
     }
+    .copy {
+        font-weight: 300;
+        font-size: 1.6em;
+    }
 }
 
 @media only screen and (max-width: 880px) {
@@ -1135,6 +1139,10 @@ body {
     .icons_container {
         margin-left: 37%;
         margin-bottom: 0.8rem;
+    }
+    .copy {
+        font-weight: 300;
+        font-size: 1.5em;
     }
 }
 
@@ -1166,4 +1174,8 @@ body {
         margin-bottom: 0.5rem;
     }
 
+    .copy {
+        font-weight: 300;
+        font-size: 1.3em;
+    }
 }
