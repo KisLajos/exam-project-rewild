@@ -11,24 +11,43 @@ for (let galleryItemIndex = 0; galleryItemIndex < galleryItemCount; galleryItemI
 
     popupExit.addEventListener("click", function(event) {
         popup.classList.remove("show");
+        scrollStatus("start")
     });
 
     popup.addEventListener("click", function(event) {
         if (event.target == popup) {
             popup.classList.remove("show");
+            scrollStatus("start")
         }
     });
 
     let galleryItem = document.getElementById("gallery-item-" + galleryItemIndex);
     galleryItem.addEventListener("click", function(event) {
         popup.classList.add("show");
+        scrollStatus("stop")
     });
 
     document.body.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             popup.classList.remove("show");
+            scrollStatus("start")
         }
     });
+}
+
+/* Handles scrolling,
+so if the modal is open, it's not possible to scroll,
+but once the modal is closed, you can scroll again */
+function scrollStatus(status) {
+    if (status==="stop") {
+        document.body.classList.add("stop-scrolling");
+    }
+    else if (status==="start") {
+        document.body.classList.remove("stop-scrolling");
+    }
+    else {
+        console.log("Wrong parameter received!");
+    }
 }
 
 // ----------

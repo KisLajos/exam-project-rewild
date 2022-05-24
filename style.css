@@ -1133,6 +1133,11 @@ body {
     color: black;
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* PROJECT GALLERY END */
 
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
