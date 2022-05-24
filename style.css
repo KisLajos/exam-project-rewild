@@ -880,12 +880,6 @@ body {
     justify-content: center;
 }
 
-.flex-end {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 .info-pop-up {
     padding: 0.5rem;
 }
