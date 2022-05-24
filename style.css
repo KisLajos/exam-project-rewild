@@ -870,7 +870,25 @@ body {
     top: 10%;
 }
 
+.animation-textbox-button {
+    scale: 0.75;
+}
 
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.info-pop-up {
+    padding: 0.5rem;
+}
 
 /* ANIMATION END */
 
