@@ -39,11 +39,15 @@ for (let galleryItemIndex = 0; galleryItemIndex < galleryItemCount; galleryItemI
 so if the modal is open, it's not possible to scroll,
 but once the modal is closed, you can scroll again */
 function scrollStatus(status) {
+    let navbar = document.getElementById("navbar");
     if (status === "stop") {
         document.body.classList.add("stop-scrolling");
+        /* also hiding the navbar because that can scroll too */
+        navbar.classList.add("hide-navbar");
     }
     else if (status === "start") {
         document.body.classList.remove("stop-scrolling");
+        navbar.classList.remove("hide-navbar");
     }
     else {
         console.log("Wrong parameter received!");

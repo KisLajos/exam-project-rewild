@@ -1138,6 +1138,10 @@ body {
     overflow: hidden;
 }
 
+.hide-navbar {
+    display: none;
+}
+
 /* PROJECT GALLERY END */
 
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
