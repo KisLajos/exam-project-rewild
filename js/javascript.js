@@ -49,7 +49,7 @@ let long_observer = new IntersectionObserver((entries, observer) => {
             console.log(entry.target.id);
         }
     };
-}, { threshold: 0.05 });
+}, { threshold: 0.02});
 
 const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
