@@ -1114,7 +1114,7 @@ body {
 /* PROJECT GALLERY END */
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
 @media only screen and (max-width: 1300px) {
     .footer_title {
         font-size: 3rem;
@@ -1195,5 +1195,16 @@ body {
     .copy {
         font-weight: 300;
         font-size: 1.3em;
+    }
+    .dig-deeper {
+        left: 47%;
+        bottom: 20%;
+        font-size: 1.4em;
+    }
+    
+    .shovel {
+        left: 48.5%;
+        bottom: 8%;
+        width: 4rem;
     }
 }
