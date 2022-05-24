@@ -380,7 +380,7 @@ body {
     top: 70%;
 }
 
-/* dig deeper button */
+/* Dig deeper button */
 .dig-deeper {
     color: #F0F757;
     position: absolute;
@@ -402,7 +402,7 @@ body {
     z-index: 10;
 }
 
-/* activating the "dig deep" button when clicking */
+/* Activating the "dig deep" button when clicking */
 .scroll-down {
     height: 50px;
     width: 30px;
@@ -453,12 +453,12 @@ body {
     }
 }
 
-/* making a bee out of the cursor when starting to scroll down */
+/* Making a bee out of the cursor when starting to scroll down */
 #cursor-change {
     cursor: url('images/cursor.png'), url('images/cursor.svg'), auto;
 }
 
-/* styling all the copy of the WebDoc  */
+/* Styling all the copy of the WebDoc  */
 .copy {
     font-family: 'finalsix', sans-serif;
     font-weight: 300;
@@ -471,7 +471,7 @@ body {
     line-height: 1.4;
 }
 
-/* video */
+/* Styling video */
 .video {
     display: flex;
     justify-content: center;
@@ -479,7 +479,7 @@ body {
     left: 25%;
 }
 
-/* footer */
+/* Styling footer */
 .footer_container {
     position: relative;
     bottom: 0;
@@ -498,7 +498,7 @@ body {
     left: 32%;
 }
 
-/* background image of the footer */
+/* Background image of the footer */
 .hands {
     display: flex;
     justify-content: center;
@@ -507,6 +507,7 @@ body {
     height: auto;
 }
 
+/* SoMe icons */
 .icons_container {
     position: absolute;
     bottom: 0;
@@ -516,27 +517,29 @@ body {
     margin-bottom: 3rem;
 }
 
-/* a so-me icon inserted using Font Awesome */
+/* SoMe icon inserted using Font Awesome */
 .fa-facebook {
     background: transparent;
     color: #F0F757;
 }
 
-/* facebook hover */
+/* Facebook hover */
 .fa-facebook:hover {
     transform: scale(1.1);
 }
 
-/* a so-me icon inserted using Font Awesome */
+/* SoMe icon inserted using Font Awesome */
 .fa-instagram {
     background: transparent;
     color: #F0F757;
 }
 
+/* Instagram hover */
 .fa-instagram:hover {
     transform: scale(1.1);
 }
 
+/* Styling SoMe icons */
 .fa-facebook {
     width: 120px;
     height: 120px;
@@ -562,64 +565,17 @@ body {
     width: 100%;
 }
 
-/* worms */
+/* Worms */
 .worm {
     width: 4%;
     height: auto;
     z-index: 10;
 }
 
-/* making worms interactive when hovering */
+/* Making worms interactive when hovering */
 .worm:hover {
     animation: shake 0.6s;
 }
-
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
-
 
 #worm1 {
     position: absolute;
