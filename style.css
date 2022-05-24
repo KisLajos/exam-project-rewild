@@ -860,6 +860,17 @@ body {
     scale: 0.75;
 }
 
+.animation-textbox {
+    background-color: #fff;
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
+    left: 45%;
+    top: 10%;
+}
+
+
+
 /* ANIMATION END */
 
 /* PROJECT GALLERY */
