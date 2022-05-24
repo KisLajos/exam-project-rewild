@@ -16,10 +16,6 @@ let observer = new IntersectionObserver((entries, observer) => {
                 document.getElementById("button-2").classList.add("selected");
             }
 
-            if (entry.target.id === "intersection-3") {
-                document.getElementById("button-3").classList.add("selected");
-            }
-
             if (entry.target.id === "intersection-4") {
                 document.getElementById("button-4").classList.add("selected");
             }
@@ -31,13 +27,35 @@ let observer = new IntersectionObserver((entries, observer) => {
             console.log(entry.target.id);
         }
     };
-}, { threshold: 0.1 });
+}, { threshold: 0.25 });
+
+/* Because the animation section is extra long due to the skrollr animations' nature
+ we have to have a second observer with a much larger threshold
+ that only watches for the animation section */
+let long_observer = new IntersectionObserver((entries, observer) => {
+    console.log(entries)
+    for (const entry of entries) {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            const buttons = document.getElementsByClassName("navbar-button")
+            for (const button of buttons) {
+                button.classList.remove("selected")
+            }
+
+            if (entry.target.id === "intersection-3") {
+                document.getElementById("button-3").classList.add("selected");
+            }
+
+            console.log(entry.target.id);
+        }
+    };
+}, { threshold: 0.05 });
 
 const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
     observer.observe(intersection)
+    long_observer.observe(intersection)
 }
-
 
 /* Learnt this parallax effect with Online Tutorials on: https://www.youtube.com/watch?v=TawH-AqHTXc */
 let bg = document.getElementById("bg");
