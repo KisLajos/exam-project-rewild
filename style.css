@@ -712,21 +712,19 @@ body {
     z-index: 101;
 }
 
+#animation-man {
+    top: 3%;
+}
+
 #animation-lawnmower {
     top: 38%;
     z-index: 102;
 }
 
 #animation-flowers-in-hand {
-    left: 23%;
+    left: 20%;
     z-index: 100;
 }
-
-/* #animation-grass-2 {
-    left: 25%;
-    top: 51%;
-    z-index: 101;
-} */
 
 #animation-grass-3 {
     left: 21%;
@@ -749,12 +747,6 @@ body {
     scale: 0.7;
 }
 
-/* #animation-grass-3 {
-    left: 21%;
-    top: 84%;
-    scale: 0.86;
-} */
-
 #animation-soil {
     left: 21%;
     top: 84%;
@@ -763,7 +755,7 @@ body {
 
 #animation-stones {
     left: 23%;
-    top: 86%;
+    top: 90%;
     scale: 0.75;
 }
 
