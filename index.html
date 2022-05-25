@@ -8,58 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/zvj3sro.css">
     <script src="https://kit.fontawesome.com/3910174d34.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/images/insects/bee.png">
+    <link rel="icon" href="/images/bee.png">
+    <script src="script.js" defer></script>
     <title>Rewild Aarhus</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <a class="navbar-button" href="#intersection-1" id="button-1">
-            <div class="navbar-button-link">Back to top</div>
-        </a>
-        <a class="navbar-button" href="#intersection-2" id="button-2">
-            <div class="navbar-button-link">About us</div>
-        </a>
-        <a class="navbar-button" href="#intersection-3" id="button-3">
-            <div class="navbar-button-link">Biodiversity</div>
-        </a>
-        <a class="navbar-button" href="#intersection-4" id="button-4">
-            <div class="navbar-button-link">Projects</div>
-        </a>
-        <a class="navbar-button" href="#intersection-5" id="button-5">
-            <div class="navbar-button-link">Contact us</div>
-        </a>
-    </nav>
 
-    <!-- Header -->
+    <div class="navbar">
+        <div class="navbar-button" id="button-1"></div>
+        <div class="navbar-button" id="button-2"></div>
+        <div class="navbar-button" id="button-3"></div>
+        <div class="navbar-button" id="button-4"></div>
+        <div class="navbar-button" id="button-5"></div>
+    </div>
+
     <header id="intersection-1" class="intersection">
-        <!-- Bees -->
-        <img id="bee1" class="bee" src="images/insects/bee.png" alt="bee">
-        <img id="bee2" class="bee" src="images/insects/bee1.svg" alt="bee">
-        <img id="bee3" class="bee" src="images/insects/bee.svg" alt="bee">
-        <img id="bee4" class="bee" src="images/insects/bee.svg" alt="bee">
-        <img id="bee5" class="bee" src="images/insects/bee1.svg" alt="bee">
-        <img id="bee6" class="bee" src="images/insects/bee1.svg" alt="bee">
+        <!-- bees -->
+        <img id="bee1" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee2" class="bee" src="images/bee1.svg" alt="bee">
+        <img id="bee3" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee4" class="bee" src="images/bee.svg" alt="bee">
+        <img id="bee5" class="bee" src="images/bee1.svg" alt="bee">
+        <img id="bee6" class="bee" src="images/bee1.svg" alt="bee">
 
-        <!-- Bugs -->
-        <img id="bug1" class="bug" src="images/insects/bug.svg" alt="bug">
-        <img id="bug2" class="bug" src="images/insects/ladybug.svg" alt="ladybug">
-        <img id="bug3" class="bug" src="images/insects/snail.png" alt="snail">
-        <img id="bug4" class="bug" src="images/insects/snail.png" alt="snail">
-        <img id="bug5" class="bug" src="images/insects/ladybug.svg" alt="ladybug">
-        <img id="bug6" class="bug" src="images/insects/bug.svg" alt="bug">
 
-        <!-- Shovel button -->
-        <a href="#cursor-change">
-            <div class="main" id="section1">
-                <a class="dig-deeper" href="#cursor-change">dig deeper</a>
-                <a href="#cursor-change"><img class="shovel" src="images/header/shovel.png" alt="shovel"></a>
-                <div href="#cursor-change" class="scroll-down"></div>
-            </div>
-        </a>
+        <!-- bugs -->
+        <img id="bug1" class="bug" src="images/bug.svg" alt="bug">
+        <img id="bug2" class="bug" src="images/ladybug.svg" alt="ladybug">
+        <img id="bug3" class="bug" src="images/snail.png" alt="snail">
+        <img id="bug4" class="bug" src="images/snail.png" alt="snail">
+        <img id="bug5" class="bug" src="images/ladybug.svg" alt="ladybug">
+        <img id="bug6" class="bug" src="images/bug.svg" alt="bug">
 
-<<<<<<< HEAD
         <!-- shovel button -->
         <div class="main" id="section1">
             <a class="dig-deeper" href="#cursor-change">DIG DEEPER</a>
@@ -69,16 +50,14 @@
 
 
         <!-- parallax -->
-=======
-        <!-- Parallax layers -->
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
         <div class="parallax">
+
             <img src="images/header/bg.svg" id="bg" alt="sky">
             <img src="images/header/city.svg" id="city" alt="city">
             <h2 id="text1">REWILD</h2>
             <h2 id="text2">AARHUS</h2>
 
-            <!-- Grass and flower animation -->
+            <!-- grass and flower animation -->
             <div class="layer2">
                 <img src="images/header/flowers.svg" id="flowers" alt="Flowers">
             </div>
@@ -87,10 +66,7 @@
             </div>
         </div>
     </header>
-
-    <!-- Cursor changing into a bee from here -->
     <div id="cursor-change">
-<<<<<<< HEAD
     <section id="intersection-2" class="section-video intersection">
         <p class="copy">
           Rewild Aarhus who? <br>
@@ -103,25 +79,33 @@
           Your browser does not support the video tag.
           </video>
     </section>
-=======
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
 
-        <!-- Introduction and video section -->
-        <section id="intersection-2" class="section-video intersection">
-            <div class="" id="currpix">0</div>
+    <section id="intersection-3" class="section-animation intersection">
+        <img style="position: relative;" src="images/facebook.png" alt="Moon"
+        data-1800="left: -100%; display: block"
+        data-2000="left: 7%;"
+        data-2200="left: 14%;"
+        data-2399="left: 14%;"
+        data-2400="left: 7%;"
+        data-2600="left: -100%; display: block;"
+        data-2601="display: none;">
 
-            <p class="copy">
-                <br>About us...<br>
-                We are a volunteer-driven organisation educating citizens on sustainability
-                and making our city more biodiverse through projects and workshops.<br>
-                <br>This is us...
-                <br>
+        <p class="copy">We said “biodiversity” many times now. But what does biodiverse even mean?
+            To put it simply- the more different species of plants, animals, fungi and bacteria there is, the more biodiverse the place gets! <br>
+            And the more diverse the nature, the healthier the ecosystem is. <br>
+            Biodiversity provides ecosystems that give us oxygen, clean air and water, pollination of plants, pest control, wastewater treatment and much more. <br><br>
+            And the more biodiverse the city is, the better for us!
+            Become a part of the bottom-up movement for a greener and more biodiverse city!</p>
+    </section>
 
-                <br> ------- INSERT VIDEO -------
-            </p>
-        </section>
+    <section id="intersection-4" class="section-projects intersection">
+        <p class="copy">As Rewild Aarhus, a group of volunteers, we organise different projects and workshops for the citizens of Aarhus. <br> We put a focus on educating as well.
+            But most importantly, we have a good time all together! <br>
+            
+            Did we plant a seed of curiosity?<br>
+            Check out our project gallery then!<br>
+        </p>
 
-<<<<<<< HEAD
 <!-- project gallery -->
 <div class="gallery-container">
     <div class="gallery-grid">
@@ -133,14 +117,9 @@
         <div class="gallery-item" id="gallery-item-5" style="background-image: url(hotelmini.png);"><div class="gallery-label">Insect hotel</div><div class="gallery-triangle"></div></div>
     </div>
 </div>
-=======
-        <!-- Section explaining biodiversity and presenting the animated infographics -->
-        <section id="intersection-3" class="section-animation intersection">
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
 
-            <p class="copy">
+<!-- start popups -->
 
-<<<<<<< HEAD
 <div class="popup-bg" id="popup-0">
     <div class="popup-container">
         <div class="popup-content">
@@ -192,90 +171,17 @@
                         <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-0-img-4">5</label></li>
                         <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-0-img-5">6</label></li>
                     </ul>
-=======
-                To put it simply, the more species of insects, plants, animals, fungi and bacteria there are in Aarhus;
-                the more biodiverse it is. <br>
-                <br>
-                Why do we need biodiversity? <br>
-                Biodiversity provides ecosystems that give us oxygen, clean air and water, pollination of plants, pest
-                control, wastewater treatment and many ecosystem services.<br>
-                All these are important in making our lives better. <br>
-                <br>
-                Become a part of the bottom-up movement for a greener and more biodiverse city.
-            </p>
-
-            <!-- Animation scene -->
-            <div class="scene-container">
-                <img id="animation-grass" src="images/animation/grass.svg" alt="Grass" data-3300="left:100%"
-                    data-4600="left:25%; opacity:1;" data-5000="display:block;" data-11000="opacity:0;">
-                <img id="animation-lawnmower" src="images/animation/lawnmower.svg" alt="Lawnmower"
-                    data-3300="left:-50%; opacity:1;" data-4600="left:25%;" data-5000="display:block;"
-                    data-5600="left:-50%" data-11000="opacity:0;">
-                <img id="animation-man" src="images/animation/man.svg" alt="Man" data-3300="left:-50%;"
-                    data-4600="left:15%;opacity:1;" data-5000="display:block;" data-7000="left:15%;"
-                    data-8200="left:-50%;" data-11000="opacity:0;">
-                <img id="animation-flowers-in-hand" src="images/animation/flowers-in-hand.svg" alt="Flowers"
-                    data-5600="top:-50%;opacity:1;" data-6400="top:22%;" data-6600="display:block;"
-                    data-7000="opacity:0;" data-8200="top:-50%;" data-11000="opacity:0;">
-                <img id="animation-grass-2" src="images/animation/grass-2.svg" alt="Grass" data-5000="opacity:0;"
-                    data-6500="opacity:1;" data-6600="display:block;" data-11000="opacity:0;">
-                <img id="animation-flowers-in-grass" src="images/animation/flowers-in-grass.svg" alt="Flowers"
-                    data-6700="opacity:0;" data-7200="opacity:1;" data-11000="opacity:0;">
-                <img id="animation-dandelions-in-grass" src="images/animation/dandelions.svg" alt="Dandelions"
-                    data-6700="opacity:0;" data-7200="opacity:1;" data-11000="opacity:0;">
-                <!-- <img id="animation-grass-3" src="images/animation/grass-3.svg" alt="Grass" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;"> -->
-                <img id="animation-soil" src="images/animation/soil.svg" alt="Soil" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;">
-                <img id="animation-stones" src="images/animation/stones.svg" alt="Stones" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;">
-                <img id="animation-ants" src="images/animation/ants.svg" alt="Ants" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;">
-                <img id="animation-worms" src="images/animation/worms.svg" alt="Worms" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;">
-                <img id="animation-bees" src="images/animation/bees.svg" alt="Bees" data-7200="top:-50%; opacity:0;"
-                    data-7800="top:50%; opacity:1;" data-11000="opacity:0;">
-                <img id="animation-butterflies" src="images/animation/butterflies.svg" alt="Butterflies"
-                    data-7200="left:-50%; opacity:1;" data-7800="left:38;" data-11000="opacity:0;">
-                <img id="animation-mole" src="images/animation/mole.svg" alt="Mole" data-7200="opacity:0;"
-                    data-7800="opacity:1;" data-11000="opacity:0;">
-
-                <!-- Textboxes for animation -->
-                <div class="animation-textbox flex-centered" id="text-box-1" data-4000="opacity:0;"
-                    data-4800="opacity:1;" data-5400="opacity:0;">
-                    <div id="animation-text-1" data-4000="opacity:0;" data-4800="opacity:1;" data-5400="opacity:0;">
-                        <span class="flex-centered info-pop-up">
-                            Don’t mow the lawn so often.
-                            Let the grass grow.
-                            Why? To boost local ecology!
-                        </span>
-                    </div>
-                </div>
-
-                <div class="animation-textbox flex-centered" id="text-box-2" data-6000="opacity:0;"
-                    data-7500="opacity:1;" data-8100="opacity:0;">
-                    <div id="animation-text-2" data-6000="opacity:0;" data-7500="opacity:1;" data-8100="opacity:0;">
-                        <span class="flex-centered info-pop-up">
-                            Pardon the weeds, they are feeding the bees!
-                        </span>
-                    </div>
-                </div>
-
-                <div class="animation-textbox flex-centered" id="text-box-3" data-8700="opacity:0;"
-                    data-9500="opacity:1;" data-10100="opacity:0;">
-                    <div id="animation-text-3" data-8700="opacity:0;" data-9500="opacity:1;" data-10100="opacity:0;">
-                        <span class="flex-centered info-pop-up">
-                            Different flowers attract different insects.
-                            Insects pollinate plants,
-                            provide food for other life and help naturally recycle waste.
-                        </span>
-                    </div>
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
                 </div>
             </div>
-        </section>
+            <div class="popup-text-container">
+                <h2>Henlo 0</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+            </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-<<<<<<< HEAD
 <div class="popup-bg" id="popup-1">
     <div class="popup-container">
         <div class="popup-content">
@@ -304,360 +210,250 @@
 >>>>>>> Stashed changes
                             </figure>
                         </div>
-=======
-        <!-- Section with Rewild's projects -->
-        <section id="intersection-4" class="section-projects intersection">
-            <p class="copy">With our projects and workshops for the citizens of Aarhus, we educate them to make the city
-                greener. <br> We have a great time with great people too!<br>
-                <br>
-                Did we plant a seed of curiosity? <br>
-                Take a closer look of our work through the gallery.
-            </p>
-
-            <!-- Project gallery -->
-            <div class="gallery-container">
-                <div class="gallery-grid">
-                    <div class="gallery-item" id="gallery-item-0" style="background-image: url(earth22.jpeg);">
-                        <div class="gallery-label">Earth Day 2022</div>
-                        <div class="gallery-triangle"></div>
                     </div>
-                    <div class="gallery-item" id="gallery-item-1" style="background-image: url(earth22.jpeg);">
-                        <div class="gallery-label">Vesterbro Torv project</div>
-                        <div class="gallery-triangle"></div>
-                    </div>
-                    <div class="gallery-item" id="gallery-item-2" style="background-image: url(fundmini.png);">
-                        <div class="gallery-label">Fun(d) raising party</div>
-                        <div class="gallery-triangle"></div>
-                    </div>
-                    <div class="gallery-item" id="gallery-item-3" style="background-image: url(bombmini.png);">
-                        <div class="gallery-label">Seed bomb workshop</div>
-                        <div class="gallery-triangle"></div>
-                    </div>
-                    <div class="gallery-item" id="gallery-item-4" style="background-image: url(earth22.jpeg);">
-                        <div class="gallery-label">Earth Day 2021</div>
-                        <div class="gallery-triangle"></div>
-                    </div>
-                    <div class="gallery-item" id="gallery-item-5" style="background-image: url(hotelmini.png);">
-                        <div class="gallery-label">Insect hotel</div>
-                        <div class="gallery-triangle"></div>
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
-                    </div>
+                    <ul class="popup-slider-nav">
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-1-img-0">1</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-1-img-1">2</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-1-img-2">3</label></li>
+                    </ul>
                 </div>
             </div>
+            <div class="popup-text-container">
+                <h2>Henlo 1</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+            </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-            <!-- Popups start -->
-
-            <div class="popup-bg" id="popup-0">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-0-slider" class="popup-trigger" id="popup-0-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-0-slider" class="popup-trigger"
-                                        id="popup-0-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22_1.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-0-slider" class="popup-trigger"
-                                        id="popup-0-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-0-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-0-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-0-img-2">3</label></li>
-                                </ul>
-                            </div>
+<div class="popup-bg" id="popup-2">
+    <div class="popup-container">
+        <div class="popup-content">
+            <div class="popup-pic-container">
+                <div class="popup-slider-wrapper">
+                    <div class="popup-slider">
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-0" checked="checked" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund0.jpg);"></div>
+                            </figure>
                         </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 0</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-1" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund1.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-2" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund2.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-3" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund3.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-4" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund4.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-5" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(fund5.jpg);"></div>
+                            </figure>
                         </div>
                     </div>
-                    <div class="popup-exit">×</div>
+                    <ul class="popup-slider-nav">
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-0">1</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-1">2</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-2">3</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-3">4</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-4">5</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-2-img-5">6</label></li>
+                    </ul>
                 </div>
             </div>
+            <div class="popup-text-container">
+                <h2>Henlo 2</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+            </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-            <div class="popup-bg" id="popup-1">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-1-slider" class="popup-trigger" id="popup-1-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-1-slider" class="popup-trigger"
-                                        id="popup-1-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22_1.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-1-slider" class="popup-trigger"
-                                        id="popup-1-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-1-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-1-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-1-img-2">3</label></li>
-                                </ul>
-                            </div>
+<div class="popup-bg" id="popup-3">
+    <div class="popup-container">
+        <div class="popup-content">
+            <div class="popup-pic-container">
+                <div class="popup-slider-wrapper">
+                    <div class="popup-slider">
+                        <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-0" checked="checked" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb0.jpg);"></div>
+                            </figure>
                         </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 1</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+                        <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-1" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb1.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-2" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb2.jpg);"></div>
+                            </figure>
+                        </div>
+                            <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-3" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb3.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-4" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb4.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-5" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(bomb5.jpg);"></div>
+                            </figure>
                         </div>
                     </div>
-                    <div class="popup-exit">×</div>
+                    <ul class="popup-slider-nav">
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-0">1</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-1">2</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-2">3</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-3">4</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-4">5</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-3-img-5">6</label></li>
+                    </ul>
                 </div>
             </div>
+            <div class="popup-text-container">
+                <h2>Henlo 3</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+            </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-            <div class="popup-bg" id="popup-2">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger" id="popup-2-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund0.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger"
-                                        id="popup-2-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund1.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger"
-                                        id="popup-2-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund2.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger"
-                                        id="popup-2-img-3" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund3.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger"
-                                        id="popup-2-img-4" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund4.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-2-slider" class="popup-trigger"
-                                        id="popup-2-img-5" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(fund5.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-2">3</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-3">4</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-4">5</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-2-img-5">6</label></li>
-                                </ul>
-                            </div>
+<div class="popup-bg" id="popup-4">
+    <div class="popup-container">
+        <div class="popup-content">
+            <div class="popup-pic-container">
+                <div class="popup-slider-wrapper">
+                    <div class="popup-slider">
+                        <input type="radio" name="popup-4-slider" class="popup-trigger" id="popup-4-img-0" checked="checked" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(earth22.jpeg);"></div>
+                            </figure>
                         </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 2</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+                        <input type="radio" name="popup-4-slider" class="popup-trigger" id="popup-4-img-1" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(earth22_1.jpeg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-4-slider" class="popup-trigger" id="popup-4-img-2" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(earth22.jpeg);"></div>
+                            </figure>
                         </div>
                     </div>
-                    <div class="popup-exit">×</div>
+                    <ul class="popup-slider-nav">
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-4-img-0">1</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-4-img-1">2</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-4-img-2">3</label></li>
+                    </ul>
                 </div>
             </div>
+            <div class="popup-text-container">
+                <h2>Henlo 4</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+            </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-            <div class="popup-bg" id="popup-3">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger" id="popup-3-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb0.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger"
-                                        id="popup-3-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb1.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger"
-                                        id="popup-3-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb2.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger"
-                                        id="popup-3-img-3" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb3.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger"
-                                        id="popup-3-img-4" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb4.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-3-slider" class="popup-trigger"
-                                        id="popup-3-img-5" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(bomb5.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-2">3</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-3">4</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-4">5</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-3-img-5">6</label></li>
-                                </ul>
-                            </div>
+<div class="popup-bg" id="popup-5">
+    <div class="popup-container">
+        <div class="popup-content">
+            <div class="popup-pic-container">
+                <div class="popup-slider-wrapper">
+                    <div class="popup-slider">
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-0" checked="checked" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel0.jpg);"></div>
+                            </figure>
                         </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 3</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-1" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel1.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-2" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel2.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-3" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel3.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-4" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel4.jpg);"></div>
+                            </figure>
+                        </div>
+                        <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-5" />
+                        <div class="popup-slide">
+                            <figure class="popup-slide-figure">
+                                <div class="popup-slide-img" style="background-image: url(hotel5.jpg);"></div>
+                            </figure>
                         </div>
                     </div>
-                    <div class="popup-exit">×</div>
+                    <ul class="popup-slider-nav">
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-0">1</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-1">2</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-2">3</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-3">4</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-4">5</label></li>
+                        <li class="popup-slider-nav-item"><label class="popup-slider-nav-label" for="popup-5-img-5">6</label></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="popup-bg" id="popup-4">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-4-slider" class="popup-trigger" id="popup-4-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-4-slider" class="popup-trigger"
-                                        id="popup-4-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22_1.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-4-slider" class="popup-trigger"
-                                        id="popup-4-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(earth22.jpeg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-4-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-4-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-4-img-2">3</label></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 4</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
-                        </div>
-                    </div>
-                    <div class="popup-exit">×</div>
-                </div>
+            <div class="popup-text-container">
+                <h2>Henlo 5</h2>
+                <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
             </div>
+        </div>
+        <div class="popup-exit">×</div>
+    </div>
+</div>
 
-<<<<<<< HEAD
 <!-- end popups -->
 
     </section>
@@ -680,121 +476,11 @@
             <a href="https://www.facebook.com/groups/5279777528714319" class="fa-brands fa-facebook"></a>
         </div>
     </div>
-=======
-            <div class="popup-bg" id="popup-5">
-                <div class="popup-container">
-                    <div class="popup-content">
-                        <div class="popup-pic-container">
-                            <div class="popup-slider-wrapper">
-                                <div class="popup-slider">
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger" id="popup-5-img-0"
-                                        checked="checked" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel0.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger"
-                                        id="popup-5-img-1" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel1.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger"
-                                        id="popup-5-img-2" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel2.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger"
-                                        id="popup-5-img-3" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel3.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger"
-                                        id="popup-5-img-4" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel4.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <input type="radio" name="popup-5-slider" class="popup-trigger"
-                                        id="popup-5-img-5" />
-                                    <div class="popup-slide">
-                                        <figure class="popup-slide-figure">
-                                            <div class="popup-slide-img" style="background-image: url(hotel5.jpg);">
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <ul class="popup-slider-nav">
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-0">1</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-1">2</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-2">3</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-3">4</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-4">5</label></li>
-                                    <li class="popup-slider-nav-item"><label class="popup-slider-nav-label"
-                                            for="popup-5-img-5">6</label></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="popup-text-container">
-                            <h2>Henlo 5</h2>
-                            <p>abjkefgipuwepioweriopwer jilweuopwe æiogwjoæw joæwgjklægjklæw joæwgjkæwrgwr g g</p>
-                        </div>
-                    </div>
-                    <div class="popup-exit">×</div>
-                </div>
-            </div>
-            <!-- Popups end -->
-        </section>
->>>>>>> 5ecc1f3d93c3ddc283996ffa438f38b6a1b73f7e
 
-        <!-- Footer -->
-        <section class="section-footer-copy">
-            <p class="copy">Would you like to know more or maybe even join us? <br><br> We would love to hear from you.
-                <br>
-            </p>
-        </section>
-
-        <footer id="intersection-5" class="intersection">
-            <div class="footer_container">
-                <div class="footer_title">Reach out to us</div>
-                <img class="hands" src="images/footerimg.png" alt="reach_out">
-
-                <!-- Linking SoMe links to the icons -->
-                <div class="icons_container">
-                    <a href="https://www.instagram.com/rewildaarhus/" class="fa-brands fa-instagram"></a>
-
-                    <a href="https://www.facebook.com/groups/5279777528714319" class="fa-brands fa-facebook"></a>
-                </div>
-            </div>
-
-            <!-- Worms -->
-            <img id="worm1" class="worm" src="images/insects/worm.png" alt="worm">
-            <img id="worm2" class="worm" src="images/insects/worm.png" alt="worm">
-            <img id="worm3" class="worm" src="images/insects/worm.png" alt="worm">
-            <img id="worm4" class="worm" src="images/insects/worm.png" alt="worm">
-        </footer>
-    </div>
+    </footer>
 
     <!-- Our own scripts -->
     <script type="text/javascript" src="js/javascript.js"></script>
-    <script type="text/javascript" src="js/gallery.js"></script>
 
     <!-- Third party scripts -->
     <script type="text/javascript" src="js/skrollr.min.js"></script>
