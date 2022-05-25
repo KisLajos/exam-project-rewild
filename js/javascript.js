@@ -1,3 +1,5 @@
+/* IntersectionObserver used to animate the navbar dots,
+so when we arrive at a section, the corresponding dot gets animated */
 let observer = new IntersectionObserver((entries, observer) => {
     console.log(entries)
     for (const entry of entries) {
@@ -16,10 +18,6 @@ let observer = new IntersectionObserver((entries, observer) => {
                 document.getElementById("button-2").classList.add("selected");
             }
 
-            if (entry.target.id === "intersection-3") {
-                document.getElementById("button-3").classList.add("selected");
-            }
-
             if (entry.target.id === "intersection-4") {
                 document.getElementById("button-4").classList.add("selected");
             }
@@ -27,17 +25,37 @@ let observer = new IntersectionObserver((entries, observer) => {
             if (entry.target.id === "intersection-5") {
                 document.getElementById("button-5").classList.add("selected");
             }
+        }
+    };
+}, { threshold: 0.25 });
+
+/* Because the animation section is extra long due to the skrollr animations' nature
+ we have to have a second observer with a much smaller threshold
+ that only watches for the animation section */
+let long_observer = new IntersectionObserver((entries, observer) => {
+    console.log(entries)
+    for (const entry of entries) {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            const buttons = document.getElementsByClassName("navbar-button")
+            for (const button of buttons) {
+                button.classList.remove("selected")
+            }
+
+            if (entry.target.id === "intersection-3") {
+                document.getElementById("button-3").classList.add("selected");
+            }
 
             console.log(entry.target.id);
         }
     };
-}, { threshold: 0.1 });
+}, { threshold: 0.02});
 
 const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
     observer.observe(intersection)
+    long_observer.observe(intersection)
 }
-
 
 /* Learnt this parallax effect with Online Tutorials on: https://www.youtube.com/watch?v=TawH-AqHTXc */
 let bg = document.getElementById("bg");
@@ -49,7 +67,8 @@ let text2 = document.getElementById("text2")
 
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
-    console.log(value)
+    const currpix = document.getElementById('currpix'); /* some debugging for animation */
+    currpix.textContent = value.toFixed(5).toString(); /* TODO: remove */
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
