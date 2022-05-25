@@ -720,22 +720,29 @@ body {
     z-index: 100;
 }
 
-#animation-grass-2 {
+/* #animation-grass-2 {
     left: 25%;
     top: 51%;
     z-index: 101;
+} */
+
+#animation-grass-3 {
+    left: 21%;
+    top: 40%;
+    z-index: 101;
+    scale: 0.85;
 }
 
 #animation-flowers-in-grass {
     left: 35%;
-    top: 58%;
+    top: 38%;
     z-index: 100;
     scale: 0.7;
 }
 
 #animation-dandelions-in-grass {
     left: 25%;
-    top: 43%;
+    top: 23%;
     z-index: 100;
     scale: 0.7;
 }
@@ -759,14 +766,14 @@ body {
 }
 
 #animation-ants {
-    left: 23%;
-    top: 86%;
+    left: 20%;
+    top: 66%;
     scale: 0.75;
 }
 
 #animation-worms {
     left: 23%;
-    top: 86%;
+    top: 66%;
     scale: 0.75;
 }
 
@@ -779,13 +786,13 @@ body {
 
 #animation-butterflies {
     left: 30%;
-    top: 50%;
+    top: 30%;
     scale: 0.75;
 }
 
 #animation-mole {
-    left: 60%;
-    top: 95%;
+    left: 62%;
+    top: 78%;
     scale: 0.75;
 }
 
