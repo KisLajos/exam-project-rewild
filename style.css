@@ -1177,7 +1177,9 @@ body {
     #city {
         margin-top: 15.8em;
     }
+    .copy {
         font-weight: 300;
+        font-size: 1.3em;
         margin-left: 15%;
         margin-right: 15%;
     }
