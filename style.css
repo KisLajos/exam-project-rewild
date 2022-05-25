@@ -465,6 +465,18 @@ body {
     font-style: normal;
     font-size: 1.4em;
     color: #56351E;
+    padding-top: 1.5em;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 1.4;
+}
+
+.copy-heading{
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.2em;
+    color: #56351E;
     padding-top: 3em;
     margin-left: 25%;
     margin-right: 25%;
