@@ -463,9 +463,9 @@ body {
     font-family: 'finalsix', sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #56351E;
-    padding-top: 1.5em;
+    padding-top: 1em;
     margin-left: 25%;
     margin-right: 25%;
     line-height: 1.4;
@@ -1103,6 +1103,9 @@ body {
         font-weight: 300;
         font-size: 1.4em;
     }
+    .copy-heading{
+        font-size: 2.1em;
+    }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -1119,6 +1122,9 @@ body {
         font-size: 5em;
         margin-top: -3rem;
         margin-left: 13rem;
+    }
+    .copy-heading{
+        font-size: 2em;
     }
 }
 
@@ -1150,8 +1156,16 @@ body {
     .copy {
         font-weight: 300;
         font-size: 1.5em;
+            font-weight: 300;
+            font-size: 1.3em;
+            margin-left: 15%;
+            margin-right: 15%;
     }
-
+    .copy-heading{
+        font-size: 1.7em;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
     .dig-deeper {
         left: 47%;
         bottom: 19%;
@@ -1189,12 +1203,6 @@ body {
     #city {
         margin-top: 15.8em;
     }
-    .copy {
-        font-weight: 300;
-        font-size: 1.3em;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1228,7 +1236,9 @@ body {
         font-weight: 300;
         font-size: 1.3em;
     }
-
+    .copy-heading{
+        font-size: 1.6em;
+    }
     .dig-deeper {
         left: 46%;
         bottom: 17%;
