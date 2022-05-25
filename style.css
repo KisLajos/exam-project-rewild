@@ -811,6 +811,12 @@ body {
 
 .info-pop-up {
     padding: 0.5rem;
+    font-family: 'finalsix', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8em;
+    color: #56351E;
+    margin-left: 8%;
 }
 
 /* ANIMATION END */
