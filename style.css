@@ -629,7 +629,6 @@ body {
     right: 40px;
     transform: translateY(-50%);
 }
-
 .navbar-button {
     position: relative;
     display: block;
@@ -1055,7 +1054,94 @@ body {
   margin-left: 54.6%;
 }
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
+@media only screen and (max-width: 2622px) {
+    .footer_title {
+        font-size: 6rem;
+    }
+
+    .fa-brands {
+        font-size: 5.5em;
+    }
+
+    .icons_container {
+        margin-left: 47%;
+        margin-bottom: 1.8rem;
+    }
+
+    .copy {
+        font-weight: 300;
+        font-size: 1.6em;
+    }
+    .hands{
+        width: 120%;
+    }
+
+    #text1 {
+        font-size: 8em;
+        margin-top: 7rem;
+    }
+
+    #text2 {
+        font-size: 4em;
+        margin-top: -3rem;
+        margin-left: 13rem;
+    }
+
+    #grass {
+        z-index: 3;
+        object-fit: cover;
+        margin-top: 1rem;
+        width: 110%;
+    }
+
+    #flowers {
+        margin-top: 34rem;
+    }
+
+    #city {
+        margin-top: 48rem;
+    }
+
+    #text1 {
+        font-size: 23em;
+        margin-top: 25rem;
+    }
+
+    #text2 {
+        font-size: 13em;
+        margin-top: -3rem;
+        margin-left: 29rem;
+    }
+    .copy {
+        font-weight: 300;
+        font-size: 3.3em;
+    }
+    .copy-heading{
+        font-size: 4.9em;
+    }
+    #mySVG {
+        margin-top: -8%;
+        margin-left: 49%;
+      }
+
+    .navbar-button-link {
+        font-size: 2rem;
+        right: 2rem;
+
+    }
+    .navbar-button {
+        width: 40px;
+        height: 40px;
+    }
+}
 @media only screen and (max-width: 1300px) {
+    .navbar-button-link {
+        font-size: 0.8rem;
+    }
+    .navbar-button {
+        width: 16px;
+        height: 16px;
+    }
     .footer_title {
         font-size: 3rem;
     }
@@ -1312,4 +1398,81 @@ body {
         height: 220px;
         margin-left: 21.4%;
       }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer_title {
+        font-size: 1.4rem;
+        left: 26%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 88%;
+        grid-gap: 3rem 4%;
+    }
+
+    .fa-brands {
+        font-size: 2.5em;
+    }
+
+    .icons_container {
+        margin-left: 23%;
+        margin-bottom: 0.3em;
+    }
+
+    .dig-deeper {
+        left: 43%;
+        bottom: 23%;
+        font-size: 1.2em;
+    }
+
+    .shovel {
+        left: 52.5%;
+        bottom: 10%;
+        width: 3rem;
+    }
+
+    #text1 {
+        font-size: 5em;
+        margin-top: 7rem;
+    }
+
+    #text2 {
+        font-size: 3em;
+        margin-top: -2rem;
+        margin-left: 6rem;
+    }
+
+    #grass {
+        z-index: 3;
+        object-fit: cover;
+        margin-top: 0.8em;
+        width: 110%;
+    }
+
+    #flowers {
+        margin-top: 17rem;
+    }
+
+    #city {
+        margin-top: 20.4em;
+    }
+    .copy {
+        font-weight: 300;
+        font-size: 1em;
+    }
+    .copy-heading{
+        font-size:1.3em;
+    }
+    #mySVG {
+        position: relative;
+        margin-top: -14%;
+        height: 200px;
+        margin-left: 24%;
+      }
+}
+@media only screen and (max-width: 320px) {
+    #city {
+        margin-top: 17.5em;
+    }
 }
