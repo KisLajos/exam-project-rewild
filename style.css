@@ -524,12 +524,7 @@ body {
 }
 
 .hands {
-<<<<<<< Updated upstream
-    position: absolute;
-    margin-top: 9rem;
-=======
   display: block;
->>>>>>> Stashed changes
     max-width: 100%;
     height: auto;
 }
