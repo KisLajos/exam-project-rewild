@@ -86,7 +86,6 @@
         
             <h1 class="copy-heading">Rewild Aarhus who?</h3>    
             <p class="copy">
-                <br>Rewild Aarhus, who..?<br>
                 We are a volunteer-driven organisation educating citizens on sustainability
                 and making our city more biodiverse through projects and workshops.<br>
             </p>
@@ -245,8 +244,7 @@
 
         <!-- Section with Rewild's projects -->
         <section id="intersection-4" class="section-projects intersection">
-            <p class="copy">With our projects and workshops for the citizens of Aarhus, we educate them to make the city
-                greener. <br> We have a great time with great people too!<br>
+            <p class="copy">With our projects and workshops  for the citizens of Aarhus, we educate them to make their gardens and the city greener. <br> And we have a great time with great people too!<br>
                 <br>
                 Did we plant a seed of curiosity? <br>
             </p>
@@ -683,6 +681,41 @@
             <h1 class="copy-heading">We would love to hear from you!</h1>
             <p class="copy">Would you like to know more or maybe even join us? <br> Become a part of the bottom-up movement for greener city. <br><br>
                 <br>
+                    <div id="flowerpower">
+                        <svg id="mySVG">
+                            <path fill="none" stroke="#56351E" stroke-width="1.6" id="flowerline" d="M211.4,0.2c0,0-2.3,12.5,7.8,21.9c10.1,9.5-5.5,17.2-5,26.7s7.8,13.8,7.8,13.8s9.6,6-2.7,9.9
+                            c-12.3,3.9-11.4-10.3-2.7-10.3s9.6,4.3,7.8,10.8c-1.8,6.5,22.8,20.2,18.3,10.3c-4.6-9.9-14.6-21.1-25.1-9c0,0,1.4,18.5,8.7,16.8
+                            s4.6-19.8-12.3-16.8c0,0-5.5-4.7-7.3,8.6s7.8,9.5,10.1,3.4c2.3-6-7.3-21.9-15.1-15.1s-14.6,18.1-1.8,12c12.8-6,15.1-18.1,1.8-16.4
+                            s-13.3,1.7-13.3,1.7s-11,6.5,0,6.5s21-11.2,26.5-3.4s4.6,21.1,4.6,21.9c0,0.9,0.9,25,5,28s22.8-4.7,22.8-12.9s-25.1,12.9-23.8,18.9
+                            c1.4,6-0.5,27.5-11.4,12.9c-11-14.6-5.5-15.9,0-12.5c5.5,3.4,6.4,18.9,8.2,21.1c1.8,2.2,6.9,14.6,6.4,25.4s-5.9,9.9,0,27.1
+                            s8.7,31.8,5.9,37.4" />
+                            Sorry, your browser does not support inline SVG.
+                          </svg>
+                          
+                          <script>
+                          // Get the id of the <path> element and the length of <path>
+                          var flowerline = document.getElementById("flowerline");
+                          var length = flowerline.getTotalLength();
+                          
+                          // The start position of the drawing
+                          flowerline.style.strokeDasharray = length;
+                          
+                          // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+                          flowerline.style.strokeDashoffset = length;
+                          
+                          // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+                          window.addEventListener("scroll", myFunction);
+                          
+                          function myFunction() {
+                          var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+                          
+                            var draw = length * scrollpercent;
+                            
+                            // Reverse the drawing (when scrolling upwards)
+                            flowerline.style.strokeDashoffset = length - draw;
+                          }
+                          </script>
+                    </div>
             </p>
     
         </section>
