@@ -485,10 +485,10 @@ body {
 
 /* Styling video */
 .video {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 25%;
+    margin-left: 20%;
+    width: 60%;
+    height: 60%;
+    z-index: 1000;
 }
 
 /* Styling footer */
