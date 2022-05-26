@@ -701,7 +701,7 @@ body {
 
 .scene-container {
     position: fixed;
-    top: 0;
+    top: 0%;
 }
 
 /* Positioning all the elements of the scene */
