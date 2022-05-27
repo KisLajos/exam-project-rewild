@@ -82,7 +82,6 @@ section {
 /* In order to make the grass move */
 .layer3 img {
     animation: skew-grass 2s infinite;
-    transform: skew;
     animation-direction: alternate;
     margin-top: 10%;
     position: absolute;
@@ -97,7 +96,6 @@ section {
 /* In order to make the flowers move */
 .layer2 img {
     animation: skew-flowers 3s infinite;
-    transform: skew;
     animation-direction: alternate;
     margin-top: 3%;
     position: absolute;
