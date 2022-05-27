@@ -702,6 +702,7 @@ body {
 .scene-container {
     position: fixed;
     top: 0%;
+    margin-top: 30%;
 }
 
 /* Positioning all the elements of the scene */
@@ -1053,6 +1054,26 @@ body {
   height: 220px;
   margin-left: 54.6%;
 }
+
+.quote{
+    font-family: Reenie Beanie-Regular;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 3em;
+    color: yellow;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.quote-name{
+    font-family: Reenie Beanie-Regular;
+    font-size: 3.5em;
+    color: yellow;
+    margin-left: 70%;
+    margin-right: 10%;
+}
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
 @media only screen and (min-width: 1940px) {
     .footer_title {
@@ -1203,6 +1224,12 @@ body {
     .copy-heading{
         font-size: 2.1em;
     }
+    .quote{
+        font-size: 2.9em;
+  }
+  .quote-name{
+      font-size: 2.9em;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -1223,6 +1250,12 @@ body {
     .copy-heading{
         font-size: 2em;
     }
+    .quote{
+        font-size: 2.6em;
+  }
+  .quote-name{
+      font-size: 2.6em;
+  }
 }
 
 @media only screen and (max-width: 880px) {
@@ -1305,6 +1338,12 @@ body {
         height: 220px;
         margin-left: 48.4%;
       }
+      .quote{
+        font-size: 2.3em;
+  }
+  .quote-name{
+      font-size: 2.3em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1398,6 +1437,12 @@ body {
         height: 220px;
         margin-left: 21.4%;
       }
+      .quote{
+          font-size: 2em;
+    }
+    .quote-name{
+        font-size: 2em;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1474,5 +1519,11 @@ body {
 @media only screen and (max-width: 320px) {
     #city {
         margin-top: 17.5em;
+    }
+    .quote{
+
+    }
+    .quote-name{
+
     }
 }
