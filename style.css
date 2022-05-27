@@ -727,45 +727,45 @@ body {
     left: 21%;
     top: 40%;
     z-index: 101;
-    scale: 0.85;
+    transform: scale(0.85);
 }
 
 #animation-flowers-in-grass {
     left: 35%;
     top: 38%;
     z-index: 100;
-    scale: 0.7;
+    transform: scale(0.7);
 }
 
 #animation-dandelions-in-grass {
     left: 25%;
     top: 23%;
     z-index: 100;
-    scale: 0.7;
+    transform: scale(0.7);
 }
 
 #animation-soil {
     left: 21%;
     top: 84%;
-    scale: 0.86;
+    transform: scale(0.86);
 }
 
 #animation-stones {
     left: 23%;
     top: 90%;
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 #animation-ants {
     left: 20%;
     top: 66%;
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 #animation-worms {
     left: 23%;
     top: 66%;
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 #animation-bees {
@@ -778,13 +778,13 @@ body {
 #animation-butterflies {
     left: 30%;
     top: 30%;
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 #animation-mole {
     left: 62%;
     top: 78%;
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 .animation-textbox {
@@ -797,7 +797,7 @@ body {
 }
 
 .animation-textbox-button {
-    scale: 0.75;
+    transform: scale(0.75);
 }
 
 .flex-centered {
