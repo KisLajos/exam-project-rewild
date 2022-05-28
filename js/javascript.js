@@ -1,9 +1,8 @@
 /* IntersectionObserver used to animate the navbar dots,
 so when we arrive at a section, the corresponding dot gets animated */
 let observer = new IntersectionObserver((entries, observer) => {
-    console.log(entries)
     for (const entry of entries) {
-        console.log(entry)
+
         if (entry.isIntersecting) {
             const buttons = document.getElementsByClassName("navbar-button")
             for (const button of buttons) {
@@ -33,9 +32,8 @@ let observer = new IntersectionObserver((entries, observer) => {
  we have to have a second observer with a much smaller threshold
  that only watches for the animation section */
 let long_observer = new IntersectionObserver((entries, observer) => {
-    console.log(entries)
     for (const entry of entries) {
-        console.log(entry)
+
         if (entry.isIntersecting) {
             const buttons = document.getElementsByClassName("navbar-button")
             for (const button of buttons) {
@@ -45,8 +43,6 @@ let long_observer = new IntersectionObserver((entries, observer) => {
             if (entry.target.id === "intersection-3") {
                 document.getElementById("button-3").classList.add("selected");
             }
-
-            console.log(entry.target.id);
         }
     };
 }, { threshold: 0.02});
