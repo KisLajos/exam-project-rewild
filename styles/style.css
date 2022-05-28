@@ -701,90 +701,84 @@ body {
     position: fixed;
     top: 0%;
     margin-top: 30%;
+    width: 100%;
 }
 
 /* Positioning all the elements of the scene */
 #animation-grass {
-    top: 60%;
+    top: 26rem;
     width: 50%;
     z-index: 101;
 }
 
 #animation-man {
-    top: 3%;
+    top: 1.5rem;
 }
 
 #animation-lawnmower {
-    top: 38%;
+    top: 16rem;
     z-index: 102;
 }
 
 #animation-flowers-in-hand {
-    left: 20%;
+    left: 19.6rem;
     z-index: 100;
 }
 
 #animation-grass-3 {
     left: 21%;
-    top: 40%;
     z-index: 101;
     transform: scale(0.85);
 }
 
 #animation-flowers-in-grass {
-    left: 35%;
-    top: 38%;
+    left: 34.5rem;
     z-index: 100;
     transform: scale(0.7);
 }
 
 #animation-dandelions-in-grass {
-    left: 25%;
-    top: 23%;
+    left: 25rem;
     z-index: 100;
     transform: scale(0.7);
 }
 
 #animation-soil {
-    left: 21%;
-    top: 84%;
+    left: 20rem;
     transform: scale(0.86);
 }
 
 #animation-stones {
-    left: 23%;
-    top: 90%;
+    left: 23rem;
     transform: scale(0.75);
 }
 
 #animation-ants {
-    left: 20%;
-    top: 66%;
+    left: 20rem;
+    top: 26rem;
     transform: scale(0.75);
 }
 
 #animation-worms {
-    left: 23%;
-    top: 66%;
+    left: 23rem;
+    top: 26rem;
     transform: scale(0.75);
 }
 
 #animation-bees {
-    left: 23%;
-    top: 50%;
+    left: 23rem;
     transform: scale(0.75);
     z-index: 103;
 }
 
 #animation-butterflies {
-    left: 30%;
-    top: 30%;
+    top: 12rem;
     transform: scale(0.75);
 }
 
 #animation-mole {
-    left: 62%;
-    top: 78%;
+    left: 60rem;
+    top: 30.5rem;
     transform: scale(0.75);
 }
 
