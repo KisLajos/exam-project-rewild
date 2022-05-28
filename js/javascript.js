@@ -67,8 +67,9 @@ let text2 = document.getElementById("text2")
 
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
-    const currpix = document.getElementById('currpix'); /* some debugging for animation */
-    currpix.textContent = value.toFixed(5).toString(); /* TODO: remove */
+    /* debugging for animation */
+    /* const currpix = document.getElementById('currpix'); 
+    currpix.textContent = value.toFixed(5).toString(); */
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
