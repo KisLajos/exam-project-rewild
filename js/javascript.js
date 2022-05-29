@@ -1,12 +1,20 @@
+let windowWidth = window.innerWidth;
+
+/* Check window width every time the windows is resized */
+window.addEventListener('resize', function() {
+	windowWidth = window.innerWidth;
+});
+
 /* IntersectionObserver used to animate the navbar dots,
 so when we arrive at a section, the corresponding dot gets animated */
 let observer = new IntersectionObserver((entries, observer) => {
     for (const entry of entries) {
 
         if (entry.isIntersecting) {
-            const buttons = document.getElementsByClassName("navbar-button")
+            const buttons = document.getElementsByClassName("navbar-button");
+
             for (const button of buttons) {
-                button.classList.remove("selected")
+                button.classList.remove("selected");
             }
 
             if (entry.target.id === "intersection-1") {
@@ -15,6 +23,10 @@ let observer = new IntersectionObserver((entries, observer) => {
 
             if (entry.target.id === "intersection-2") {
                 document.getElementById("button-2").classList.add("selected");
+            }
+
+            if (entry.target.id === "intersection-3" && windowWidth <= 800) { 
+                document.getElementById("button-3").classList.add("selected");
             }
 
             if (entry.target.id === "intersection-4") {
@@ -35,9 +47,10 @@ let long_observer = new IntersectionObserver((entries, observer) => {
     for (const entry of entries) {
 
         if (entry.isIntersecting) {
-            const buttons = document.getElementsByClassName("navbar-button")
+            const buttons = document.getElementsByClassName("navbar-button");
+
             for (const button of buttons) {
-                button.classList.remove("selected")
+                button.classList.remove("selected");
             }
 
             if (entry.target.id === "intersection-3") {
@@ -45,12 +58,15 @@ let long_observer = new IntersectionObserver((entries, observer) => {
             }
         }
     };
-}, { threshold: 0.02});
+}, { threshold: 0.02 });
 
 const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
     observer.observe(intersection)
-    long_observer.observe(intersection)
+
+    if (windowWidth > 800) { 
+        long_observer.observe(intersection);
+    }
 }
 
 /* Learnt this parallax effect with Online Tutorials on: https://www.youtube.com/watch?v=TawH-AqHTXc */
@@ -59,7 +75,7 @@ let city = document.getElementById("city");
 let grass = document.getElementById("grass");
 let flowers = document.getElementById("flowers");
 let text1 = document.getElementById("text1");
-let text2 = document.getElementById("text2")
+let text2 = document.getElementById("text2");
 
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
@@ -74,3 +90,23 @@ window.addEventListener('scroll', function () {
     text1.style.top = value * 2.5 + 'px';
     text2.style.top = value * 2.5 + 'px';
 })
+
+/* Since Skrollr break the mobile site, we removed the animation on mobile views */
+function hideAnimation() {
+    let animation = document.getElementById('scene-container');
+    let substitute = document.getElementById('scene-substitute');
+    let section = document.getElementById('intersection-3');
+
+    if (windowWidth <= 800) {
+        animation.classList.add("hide-scene");
+        substitute.classList.remove("hide-scene");
+        section.style.height = "auto";
+    }
+    else {
+        animation.classList.remove("hide-scene");
+        substitute.classList.add("hide-scene");
+        section.style.height = "11000px";
+    }
+}
+
+hideAnimation();

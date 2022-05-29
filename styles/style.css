@@ -791,6 +791,13 @@ body {
     top: 2.5rem;
 }
 
+.bee-textbox {
+    background-color: #fff;
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: 25px;
+}
+
 .animation-textbox-button {
     transform: scale(0.75);
 }
@@ -1036,7 +1043,8 @@ body {
     overflow: hidden;
 }
 
-.hide-navbar {
+.hide-navbar,
+.hide-scene {
     display: none;
 }
 /* flower SVG animation before the footer */
