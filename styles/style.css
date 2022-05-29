@@ -818,6 +818,86 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 1150px) {
+    #animation-grass {
+        width: 50%;
+        z-index: 101;
+    }
+    
+    #animation-man {
+        max-width: 10rem;
+    }
+    
+    #animation-lawnmower {
+        top: 16rem;
+        z-index: 102;
+    }
+    
+    #animation-flowers-in-hand {
+        left: 17.6rem;
+        z-index: 100;
+        max-width: 10rem;
+        object-fit: cover;
+    }
+    
+    #animation-grass-3 {
+        left: 20rem;
+        z-index: 101;
+        transform: scale(0.85);
+    }
+    
+    #animation-flowers-in-grass {
+        left: 34.5rem;
+        z-index: 100;
+        transform: scale(0.7);
+    }
+    
+    #animation-dandelions-in-grass {
+        left: 25rem;
+        z-index: 100;
+        transform: scale(0.7);
+    }
+    
+    #animation-soil {
+        left: 20rem;
+        transform: scale(0.86);
+    }
+    
+    #animation-stones {
+        left: 23rem;
+        transform: scale(0.75);
+    }
+    
+    #animation-ants {
+        left: 20rem;
+        top: 26rem;
+        transform: scale(0.75);
+    }
+    
+    #animation-worms {
+        left: 23rem;
+        top: 26rem;
+        transform: scale(0.75);
+    }
+    
+    #animation-bees {
+        left: 23rem;
+        transform: scale(0.75);
+        z-index: 103;
+    }
+    
+    #animation-butterflies {
+        top: 12rem;
+        transform: scale(0.75);
+    }
+    
+    #animation-mole {
+        left: 60rem;
+        top: 30.5rem;
+        transform: scale(0.75);
+    }
+}
+
 /* ANIMATION END */
 
 /* PROJECT GALLERY */
