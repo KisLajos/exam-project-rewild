@@ -110,3 +110,20 @@ function hideAnimation() {
 }
 
 hideAnimation();
+
+/* Trying to make Skrollr responsive */
+function handlequery(x) {
+    if (x.matches) { // If media query matches
+        correctAnimation('animation-flowers-in-hand')
+    }
+}
+
+var mediaquery = window.matchMedia("(max-width: 1150px)");
+handlequery(mediaquery);
+mediaquery.addEventListener('change', handlequery);
+
+function correctAnimation(animation_name) {
+    const current_animation = document.getElementById(animation_name);
+    console.log(current_animation.dataset['6400'])
+    current_animation.dataset['6400'] = "top:8rem;";
+}
