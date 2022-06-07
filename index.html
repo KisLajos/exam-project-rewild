@@ -69,7 +69,7 @@
         <!-- Parallax layers -->
         <div class="parallax">
             <img src="images/header/bg.svg" id="bg" alt="sky">
-            <img src="images/header/city.svg" id="city" alt="city">
+            <img src="images/header/city_2.svg" id="city" alt="city">
             <h2 id="text1">REWILD</h2>
             <h2 id="text2">AARHUS</h2>
 
@@ -101,6 +101,9 @@
 
             <video src="video/rewildaarhus.mp4" controls class="video"></video>
 
+            <p class="quote">“I was mesmerised by the amazing passion of people working here”
+            </p>
+            <p class="quote-name">– Nikoła</p>
         </section>
 
         <!-- Section explaining biodiversity and presenting the animated infographics -->
@@ -829,7 +832,8 @@
         <section class="section-footer-copy">
             <h1 class="copy-heading">We would love to hear from you!</h1>
             <p class="copy">
-                Would you like to know more or maybe even join us? <br> Become a part of the bottom-up movement for greener city.
+                Would you like to know more or maybe even join us? <br>
+                <br> We are based in Institut for X where we meet every Tuesday afternoon. And you are more than welcome to come say hello!
             </p>
             <div id="flowerpower">
                 <svg id="mySVG">
@@ -897,7 +901,6 @@
     <script src="js/skrollr.min.js"></script>
     <script>
         var s = skrollr.init();
-        s.refresh(); //to change data attributes dinamically this is required
         if (s.isMobile()) {
             s.destroy();
         }
