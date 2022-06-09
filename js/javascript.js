@@ -109,7 +109,7 @@ function hideAnimation() {
     }
 }
 
-hideAnimation();
+//hideAnimation();
 
 /* Trying to make Skrollr responsive */
 function handlequery(x) {
