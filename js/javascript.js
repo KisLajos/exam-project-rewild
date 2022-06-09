@@ -125,5 +125,12 @@ mediaquery.addEventListener('change', handlequery);
 function correctAnimation(animation_name) {
     const current_animation = document.getElementById(animation_name);
     console.log(current_animation.dataset['6400'])
-    current_animation.dataset['6400'] = "top:8rem;";
-}    current_animation.dataset['6400'] = "top:12rem;";
+    current_animation.dataset['6400'] = "top:12rem;";
+}
+
+var s = skrollr.init();
+console.log(s)
+s.refresh(); //to change data attributes dinamically this is required
+/* if (s.isMobile()) {
+    s.destroy(); //since it breaks scrolling on mobile, we kill the Skrollr instance
+} */
