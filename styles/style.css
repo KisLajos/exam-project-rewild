@@ -952,12 +952,14 @@ body {
 }
 
 .gallery-triangle::after {
-    content: "↘";
+    content: "\2193";
     font-size: 30px;
     color: #f0f757;
     position: relative;
     left: -30px;
-    bottom: -36px;
+    bottom: -38px;
+    display: block;
+    transform: rotate(-45deg);
 }
 
 .popup-bg {
