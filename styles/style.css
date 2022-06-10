@@ -35,8 +35,8 @@ body {
 
 /* FONTS */
 @font-face {
-    font-family: Reenie Beanie-Regular;
-    src: url(assets/ReenieBeanie-Regular.ttf);
+    font-family: "Reenie Beanie-Regular";
+    src: url("../assets/ReenieBeanie-Regular.ttf");
 }
 
 /* FONT REFERENCES */
@@ -475,7 +475,7 @@ body {
     line-height: 1.4;
 }
 
-.copy-heading{
+.copy-heading {
     font-family: 'finalsix', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -633,6 +633,7 @@ body {
     right: 40px;
     transform: translateY(-50%);
 }
+
 .navbar-button {
     position: relative;
     display: block;
@@ -829,74 +830,75 @@ body {
         width: 50%;
         z-index: 101;
     }
-    
+
     #animation-man {
+        top: 10rem;
         max-width: 10rem;
     }
-    
+
     #animation-lawnmower {
-        top: 16rem;
-        z-index: 102;
+        top: 19.5rem;
+        max-width: 15rem;
     }
-    
+
     #animation-flowers-in-hand {
         left: 17.6rem;
         z-index: 100;
         max-width: 10rem;
         object-fit: cover;
     }
-    
+
     #animation-grass-3 {
         left: 20rem;
         z-index: 101;
         transform: scale(0.85);
     }
-    
+
     #animation-flowers-in-grass {
         left: 34.5rem;
         z-index: 100;
         transform: scale(0.7);
     }
-    
+
     #animation-dandelions-in-grass {
         left: 25rem;
         z-index: 100;
         transform: scale(0.7);
     }
-    
+
     #animation-soil {
         left: 20rem;
         transform: scale(0.86);
     }
-    
+
     #animation-stones {
         left: 23rem;
         transform: scale(0.75);
     }
-    
+
     #animation-ants {
         left: 20rem;
         top: 26rem;
         transform: scale(0.75);
     }
-    
+
     #animation-worms {
         left: 23rem;
         top: 26rem;
         transform: scale(0.75);
     }
-    
+
     #animation-bees {
         left: 23rem;
         transform: scale(0.75);
         z-index: 103;
     }
-    
+
     #animation-butterflies {
         top: 12rem;
         transform: scale(0.75);
     }
-    
+
     #animation-mole {
         left: 60rem;
         top: 30.5rem;
@@ -1135,16 +1137,17 @@ body {
 .hide-scene {
     display: none;
 }
+
 /* flower SVG animation before the footer */
-  #mySVG {
-  position: relative;
-  margin-top: -0.6%;
-  height: 220px;
-  margin-left: 55%;
+#mySVG {
+    position: relative;
+    margin-top: -0.6%;
+    height: 220px;
+    margin-left: 55%;
 }
 
-.quote{
-    font-family: Reenie Beanie-Regular;
+.quote {
+    font-family: "Reenie Beanie-Regular";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1155,13 +1158,14 @@ body {
     margin-right: 8%;
 }
 
-.quote-name{
-    font-family: Reenie Beanie-Regular;
+.quote-name {
+    font-family: "Reenie Beanie-Regular";
     font-size: 3.5em;
     color: yellow;
     margin-left: 70%;
     margin-right: 10%;
 }
+
 /* MEDIA QUERIES TO MAKE THE WEBDOC RESPONSIVE */
 @media only screen and (min-width: 1940px) {
     .footer_title {
@@ -1181,7 +1185,8 @@ body {
         font-weight: 300;
         font-size: 1.6em;
     }
-    .hands{
+
+    .hands {
         width: 120%;
     }
 
@@ -1221,36 +1226,43 @@ body {
         margin-top: -3rem;
         margin-left: 29rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 3.3em;
     }
-    .copy-heading{
+
+    .copy-heading {
         font-size: 4.9em;
     }
+
     #mySVG {
         margin-top: -8%;
         margin-left: 51%;
-      }
+    }
 
     .navbar-button-link {
         font-size: 2rem;
         right: 2rem;
 
     }
+
     .navbar-button {
         width: 40px;
         height: 40px;
     }
 }
+
 @media only screen and (max-width: 1300px) {
     .navbar-button-link {
         font-size: 0.8rem;
     }
+
     .navbar-button {
         width: 16px;
         height: 16px;
     }
+
     .footer_title {
         font-size: 3rem;
     }
@@ -1305,19 +1317,23 @@ body {
         margin-top: -3rem;
         margin-left: 13rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1.3em;
     }
-    .copy-heading{
+
+    .copy-heading {
         font-size: 2.1em;
     }
-    .quote{
+
+    .quote {
         font-size: 2.9em;
-  }
-  .quote-name{
-      font-size: 2.9em;
-  }
+    }
+
+    .quote-name {
+        font-size: 2.9em;
+    }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -1335,15 +1351,18 @@ body {
         margin-top: -3rem;
         margin-left: 13rem;
     }
-    .copy-heading{
+
+    .copy-heading {
         font-size: 2em;
     }
-    .quote{
+
+    .quote {
         font-size: 2.6em;
-  }
-  .quote-name{
-      font-size: 2.6em;
-  }
+    }
+
+    .quote-name {
+        font-size: 2.6em;
+    }
 }
 
 @media only screen and (max-width: 880px) {
@@ -1375,19 +1394,22 @@ body {
         margin-left: 34%;
         margin-bottom: 0.8rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1.25em;
-            font-weight: 300;
-            font-size: 1.27em;
-            margin-left: 15%;
-            margin-right: 15%;
+        font-weight: 300;
+        font-size: 1.27em;
+        margin-left: 15%;
+        margin-right: 15%;
     }
-    .copy-heading{
+
+    .copy-heading {
         font-size: 1.6em;
         margin-left: 15%;
         margin-right: 15%;
     }
+
     .dig-deeper {
         left: 47%;
         bottom: 19%;
@@ -1425,18 +1447,21 @@ body {
     #city {
         margin-top: 15.8em;
     }
+
     #mySVG {
         position: relative;
         margin-top: -10%;
         height: 220px;
         margin-left: 53%;
-      }
-      .quote{
+    }
+
+    .quote {
         font-size: 2.3em;
-  }
-  .quote-name{
-      font-size: 2.3em;
-  }
+    }
+
+    .quote-name {
+        font-size: 2.3em;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1520,20 +1545,24 @@ body {
         margin-top: -3rem;
         margin-left: 13rem;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1.1em;
     }
+
     #mySVG {
         position: relative;
         margin-top: -9.8%;
         height: 220px;
         margin-left: 30.4%;
-      }
-      .quote{
-          font-size: 2em;
     }
-    .quote-name{
+
+    .quote {
+        font-size: 2em;
+    }
+
+    .quote-name {
         font-size: 2em;
     }
 }
@@ -1595,20 +1624,24 @@ body {
     #city {
         margin-top: 20.4em;
     }
+
     .copy {
         font-weight: 300;
         font-size: 1em;
     }
-    .copy-heading{
-        font-size:1.3em;
+
+    .copy-heading {
+        font-size: 1.3em;
     }
+
     #mySVG {
         position: relative;
         margin-top: -14%;
         height: 200px;
         margin-left: 24%;
-      }
+    }
 }
+
 @media only screen and (max-width: 320px) {
     #city {
         margin-top: 17.5em;
