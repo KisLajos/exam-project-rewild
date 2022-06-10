@@ -127,10 +127,20 @@ function correctAnimation(animation_name) {
     console.log(current_animation.dataset['6400'])
     current_animation.dataset['6400'] = "top:12rem;";
 }
+  
+var s = skrollr.init({
+        skrollrBody: 'scene-container',
 
-var s = skrollr.init();
-console.log(s)
-s.refresh(); //to change data attributes dinamically this is required
+        render: function(data) {
+            //Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+
 /* if (s.isMobile()) {
     s.destroy(); //since it breaks scrolling on mobile, we kill the Skrollr instance
 } */
+
+setTimeout(function(){      
+    s.refresh();
+},400);
