@@ -814,7 +814,7 @@
 		});
 
 		//Just in case there has already been some native scrolling, reset it.
-		//window.scrollTo(0, 0);
+		window.scrollTo(0, 0);
 		//documentElement.style.overflow = body.style.overflow = 'hidden';
 	};
 
@@ -1137,7 +1137,6 @@
 				_calcSteps(renderTop, _instance.getScrollTop());
 
 				//That's were we actually "scroll" on mobile.
-				console.log(_skrollrBody)
 				if(_isMobile && _skrollrBody) {
 					//Set the transform ("scroll it").
 					skrollr.setStyle(_skrollrBody, 'transform', 'translate(0, ' + -(_mobileOffset) + 'px) ' + _translateZ);
