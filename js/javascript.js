@@ -80,8 +80,8 @@ let text2 = document.getElementById("text2");
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
     /* debugging for animation */
-    /* const currpix = document.getElementById('currpix'); 
-    currpix.textContent = value.toFixed(5).toString(); */
+    const currpix = document.getElementById('currpix'); 
+    currpix.textContent = value.toFixed(5).toString();
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
@@ -109,7 +109,7 @@ function hideAnimation() {
     }
 }
 
-hideAnimation();
+//hideAnimation();
 
 /* Trying to make Skrollr responsive */
 function handlequery(x) {
@@ -125,5 +125,12 @@ mediaquery.addEventListener('change', handlequery);
 function correctAnimation(animation_name) {
     const current_animation = document.getElementById(animation_name);
     console.log(current_animation.dataset['6400'])
-    current_animation.dataset['6400'] = "top:8rem;";
+    current_animation.dataset['6400'] = "top:12rem;";
 }
+
+var s = skrollr.init();
+console.log(s)
+s.refresh(); //to change data attributes dinamically this is required
+/* if (s.isMobile()) {
+    s.destroy(); //since it breaks scrolling on mobile, we kill the Skrollr instance
+} */

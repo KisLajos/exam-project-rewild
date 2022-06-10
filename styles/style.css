@@ -33,6 +33,12 @@ body {
     position: static;
 }
 
+/* FONTS */
+@font-face {
+    font-family: Reenie Beanie-Regular;
+    src: url(assets/ReenieBeanie-Regular.ttf);
+}
+
 /* FONT REFERENCES */
 /* ARBOTEK ULTRA VALUES FOR REFERENCE
 font-family: arbotek, sans-serif;
@@ -952,12 +958,14 @@ body {
 }
 
 .gallery-triangle::after {
-    content: "↘";
+    content: "\2193";
     font-size: 30px;
     color: #f0f757;
     position: relative;
     left: -30px;
-    bottom: -36px;
+    bottom: -38px;
+    display: block;
+    transform: rotate(-45deg);
 }
 
 .popup-bg {
@@ -1347,6 +1355,11 @@ body {
         font-size: 24px;
         left: -24px;
         bottom: -30px;
+    }
+
+    .gallery-label {
+        position: absolute;
+        font-size: 14px;
     }
 
     .footer_title {
