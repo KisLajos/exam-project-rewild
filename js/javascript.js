@@ -129,7 +129,7 @@ function correctAnimation(animation_name) {
 }
   
 var s = skrollr.init({
-        skrollrBody: 'intersection-3',
+        /* skrollrBody: 'intersection-3', */
 
         render: function(data) {
             //Log the current scroll position.
@@ -141,6 +141,6 @@ var s = skrollr.init({
     s.destroy(); //since it breaks scrolling on mobile, we kill the Skrollr instance
 } */
 
-setTimeout(function(){      
+/* setTimeout(function(){      
     s.refresh();
-},400);
+},400); */
