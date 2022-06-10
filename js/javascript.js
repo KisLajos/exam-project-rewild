@@ -129,7 +129,7 @@ function correctAnimation(animation_name) {
 }
   
 var s = skrollr.init({
-        skrollrBody: 'scene-container',
+        skrollrBody: 'intersection-3',
 
         render: function(data) {
             //Log the current scroll position.
