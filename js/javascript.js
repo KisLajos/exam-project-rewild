@@ -91,27 +91,37 @@ window.addEventListener('scroll', function () {
     text2.style.top = value * 2.5 + 'px';
 })
 
-/* Since Skrollr break the mobile site, we removed the animation on mobile views */
-function hideAnimation() {
+/* --SKROLLR-- */
+
+/* initializing Skrollr */
+
+var s = skrollr.init({
+    render: function(data) {
+        console.log(data.curTop); //Log the current scroll position. TODO: remove
+    }
+});
+
+/* Trying to make Skrollr responsive */
+
+/* instead of dinamically messing around with each and every animation frame,
+we just switch out for a new set of data attributes when needed */
+function switchAnimation() {
     let animation = document.getElementById('scene-container');
     let substitute = document.getElementById('scene-substitute');
-    let section = document.getElementById('intersection-3');
 
-    if (windowWidth <= 800) {
+    if (windowWidth <= 1150) {
         animation.classList.add("hide-scene");
         substitute.classList.remove("hide-scene");
-        section.style.height = "auto";
     }
     else {
         animation.classList.remove("hide-scene");
         substitute.classList.add("hide-scene");
-        section.style.height = "11000px";
     }
+    /* TODO: add at least one more breakpoint */
 }
 
-//hideAnimation();
+switchAnimation();
 
-/* Trying to make Skrollr responsive */
 function handlequery(x) {
     if (x.matches) { // If media query matches
         correctAnimation('animation-flowers-in-hand')
@@ -127,20 +137,31 @@ function correctAnimation(animation_name) {
     console.log(current_animation.dataset['6400'])
     current_animation.dataset['6400'] = "top:12rem;";
 }
-  
-var s = skrollr.init({
-        /* skrollrBody: 'intersection-3', */
 
-        render: function(data) {
-            //Log the current scroll position.
-            console.log(data.curTop);
-        }
-    });
-
-/* if (s.isMobile()) {
-    s.destroy(); //since it breaks scrolling on mobile, we kill the Skrollr instance
-} */
-
+// refreshes animation from time to time, could be useful
 /* setTimeout(function(){      
     s.refresh();
 },400); */
+  
+//Since Skrollr breaks the mobile site, we removed the animation on mobile views 
+/* function hideAnimation() {
+    let animation = document.getElementById('scene-container');
+    let substitute = document.getElementById('scene-substitute');
+    let section = document.getElementById('intersection-3');
+
+    if (windowWidth <= 800) {
+        animation.classList.add("hide-scene");
+        substitute.classList.remove("hide-scene");
+        section.style.height = "auto";
+    }
+    else {
+        animation.classList.remove("hide-scene");
+        substitute.classList.add("hide-scene");
+        section.style.height = "11000px";
+    }
+}*/
+
+//since it breaks scrolling on mobile, we kill the Skrollr instance
+/* if (s.isMobile()) {
+    s.destroy(); 
+} */
