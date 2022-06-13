@@ -860,13 +860,13 @@ body {
     }
 
     #animation-flowers-in-grass {
-        left: 6rem;
+        left: 7rem;
         z-index: 100;
         transform: scale(0.7);
     }
 
     #animation-dandelions-in-grass {
-        left: 8rem;
+        left: 9rem;
         z-index: 100;
         transform: scale(0.7);
     }
