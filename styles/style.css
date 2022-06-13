@@ -872,36 +872,42 @@ body {
     }
 
     #animation-soil {
-        left: 3rem;
-        transform: scale(0.7);
+        left: 10rem;
+        /* transform: scale(0.7); */
+        max-width: 30rem;
     }
 
     #animation-stones {
-        left: 2rem;
-        transform: scale(0.6);
+        left: 10rem;
+        /* transform: scale(0.6); */
+        max-width: 30rem;
     }
 
     #animation-ants {
-        left: 4rem;
-        top: 18rem;
-        transform: scale(0.6);
+        left: 9rem;
+        top: 19rem;
+        /* transform: scale(0.6); */
+        max-width: 30rem;
     }
 
     #animation-worms {
-        left: 7rem;
-        top: 17rem;
-        transform: scale(0.6);
+        left: 10rem;
+        top: 18.3rem;
+        /* transform: scale(0.6); */
+        max-width: 30rem;
     }
 
     #animation-bees {
-        left: 2rem;
-        transform: scale(0.6);
+        left: 8rem;
+        /* transform: scale(0.6); */
+        max-width: 30rem;
         z-index: 103;
     }
 
     #animation-butterflies {
         top: 6rem;
-        transform: scale(0.6);
+        /* transform: scale(0.6); */
+        max-width: 30rem;
     }
 
     #animation-mole {
@@ -916,6 +922,17 @@ body {
         top: 2.5rem;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .scene-container {
+        margin-top: -15%;
+    }
+
+    .animation-textbox {
+        top: 12.5rem;
+        left: 28rem;
     }
 }
 
