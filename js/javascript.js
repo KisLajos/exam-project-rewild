@@ -1,8 +1,8 @@
 let windowWidth = window.innerWidth;
 
 /* Check window width every time the windows is resized */
-window.addEventListener('resize', function() {
-	windowWidth = window.innerWidth;
+window.addEventListener('resize', function () {
+    windowWidth = window.innerWidth;
 });
 
 /* IntersectionObserver used to animate the navbar dots,
@@ -25,7 +25,7 @@ let observer = new IntersectionObserver((entries, observer) => {
                 document.getElementById("button-2").classList.add("selected");
             }
 
-            if (entry.target.id === "intersection-3" && windowWidth <= 800) { 
+            if (entry.target.id === "intersection-3" && windowWidth <= 800) {
                 document.getElementById("button-3").classList.add("selected");
             }
 
@@ -64,7 +64,7 @@ const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
     observer.observe(intersection)
 
-    if (windowWidth > 800) { 
+    if (windowWidth > 800) {
         long_observer.observe(intersection);
     }
 }
@@ -80,8 +80,8 @@ let text2 = document.getElementById("text2");
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
     /* debugging for animation */
-    const currpix = document.getElementById('currpix'); 
-    currpix.textContent = value.toFixed(5).toString();
+    /* const currpix = document.getElementById('currpix');
+    currpix.textContent = value.toFixed(5).toString(); */
 
     bg.style.top = value * 0.5 + 'px';
     city.style.top = value * 1.5 + 'px';
@@ -91,25 +91,20 @@ window.addEventListener('scroll', function () {
     text2.style.top = value * 2.5 + 'px';
 })
 
-/* --SKROLLR-- */
+/* Skrollr */
 
 /* initializing Skrollr */
 
 var s = skrollr.init({
-    /* mobileDeceleration : 0.002, */
     forceHeight: false,
-    mobileCheck: function() {
-        //hack - forces mobile version to be off
-        return false;
-    },
-    render: function(data) {
-        console.log(data.curTop); //Log the current scroll position. TODO: remove
+    mobileCheck: function () {
+        return false; //we force Skrollr's mobile version to be off, because otherwise it will break the page flow on iOS
     }
 });
 
-/* Trying to make Skrollr responsive */
+/* Skrollr responsivity */
 
-/* instead of dinamically messing around with each and every animation frame,
+/* Instead of dinamically messing around with each and every animation frame,
 we just switch out for a new set of data attributes when needed */
 function switchAnimation() {
     let animation = document.getElementById('scene-container');
@@ -123,51 +118,35 @@ function switchAnimation() {
         animation.classList.remove("hide-scene");
         substitute.classList.add("hide-scene");
     }
-    /* TODO: add at least one more breakpoint */
 }
 
 switchAnimation();
-
-function handlequery(x) {
-    if (x.matches) { // If media query matches
-        correctAnimation('animation-flowers-in-hand')
-    }
-}
-
-var mediaquery = window.matchMedia("(max-width: 1150px)");
-handlequery(mediaquery);
-mediaquery.addEventListener('change', handlequery);
-
-function correctAnimation(animation_name) {
-    const current_animation = document.getElementById(animation_name);
-    console.log(current_animation.dataset['6400'])
-    current_animation.dataset['6400'] = "top:12rem;";
-}
 
 // refreshes animation from time to time, could be useful
 /* setTimeout(function(){      
     s.refresh();
 },400); */
-  
-//Since Skrollr breaks the mobile site, we removed the animation on mobile views 
-/* function hideAnimation() {
-    let animation = document.getElementById('scene-container');
-    let substitute = document.getElementById('scene-substitute');
-    let section = document.getElementById('intersection-3');
 
-    if (windowWidth <= 800) {
-        animation.classList.add("hide-scene");
-        substitute.classList.remove("hide-scene");
-        section.style.height = "auto";
-    }
-    else {
-        animation.classList.remove("hide-scene");
-        substitute.classList.add("hide-scene");
-        section.style.height = "11000px";
-    }
-}*/
+/* SVG animation */
 
-//since it breaks scrolling on mobile, we kill the Skrollr instance
-/* if (s.isMobile()) {
-    s.destroy(); 
-} */
+// Get the id of the <path> element and the length of <path>
+var flowerline = document.getElementById("flowerline");
+var length = flowerline.getTotalLength();
+
+// The start position of the drawing
+flowerline.style.strokeDasharray = length;
+
+// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+flowerline.style.strokeDashoffset = length;
+
+// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+    var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+    var draw = length * scrollpercent;
+
+    // Reverse the drawing (when scrolling upwards)
+    flowerline.style.strokeDashoffset = length - draw;
+}
