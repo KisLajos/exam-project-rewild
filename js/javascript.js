@@ -96,6 +96,9 @@ window.addEventListener('scroll', function () {
 /* initializing Skrollr */
 
 var s = skrollr.init({
+    /* mobileDeceleration : 0.002, */
+    forceHeight: false,
+    smoothScrolling: false,
     render: function(data) {
         console.log(data.curTop); //Log the current scroll position. TODO: remove
     }
