@@ -157,7 +157,7 @@ function drawSVGPath() {
     const drawpercent = distance / (viewportHeight + elementHeight);
 
     // Draw the path
-    let speed = windowWidth <= 1150 ? 3 : 1.2; // depending on mobile / desktop we change the speed of the drawing
+    let speed = windowWidth <= 1150 ? 2.5 : 1.2; // depending on mobile / desktop we change the speed of the drawing
     var draw = length * speed * drawpercent; 
 
     // Reverse the drawing (when scrolling upwards)
