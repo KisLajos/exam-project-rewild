@@ -140,12 +140,24 @@ flowerline.style.strokeDasharray = length;
 flowerline.style.strokeDashoffset = length;
 
 // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-window.addEventListener("scroll", myFunction);
+window.addEventListener("scroll", drawSVGPath);
 
-function myFunction() {
-    var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+// Flower animation
+function drawSVGPath() {
+    var svg_wrapper = document.getElementById('flowerpower')
 
-    var draw = length * scrollpercent;
+    const viewportHeight = window.innerHeight;
+    const scrollTop = window.scrollY;
+    const elementOffsetTop = svg_wrapper.offsetTop;
+    const elementHeight = svg_wrapper.offsetHeight;
+
+    // Calculate percentage of the element that's been seen
+    const distance = scrollTop + viewportHeight - elementOffsetTop;
+
+    const drawpercent = distance / (viewportHeight + elementHeight);
+
+    // Draw the path
+    var draw = length * 1.2 * drawpercent; 
 
     // Reverse the drawing (when scrolling upwards)
     flowerline.style.strokeDashoffset = length - draw;
