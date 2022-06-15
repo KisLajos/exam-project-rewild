@@ -157,7 +157,8 @@ function drawSVGPath() {
     const drawpercent = distance / (viewportHeight + elementHeight);
 
     // Draw the path
-    var draw = length * 1.2 * drawpercent; 
+    let speed = windowWidth <= 1150 ? 3 : 1.2; // depending on mobile / desktop we change the speed of the drawing
+    var draw = length * speed * drawpercent; 
 
     // Reverse the drawing (when scrolling upwards)
     flowerline.style.strokeDashoffset = length - draw;
