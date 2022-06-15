@@ -25,10 +25,6 @@ let observer = new IntersectionObserver((entries, observer) => {
                 document.getElementById("button-2").classList.add("selected");
             }
 
-            if (entry.target.id === "intersection-3" && windowWidth <= 800) {
-                document.getElementById("button-3").classList.add("selected");
-            }
-
             if (entry.target.id === "intersection-4") {
                 document.getElementById("button-4").classList.add("selected");
             }
@@ -63,10 +59,7 @@ let long_observer = new IntersectionObserver((entries, observer) => {
 const intersections = document.querySelectorAll(".intersection");
 for (const intersection of intersections) {
     observer.observe(intersection)
-
-    if (windowWidth > 800) {
-        long_observer.observe(intersection);
-    }
+    long_observer.observe(intersection);
 }
 
 /* Learnt this parallax effect with Online Tutorials on: https://www.youtube.com/watch?v=TawH-AqHTXc */
